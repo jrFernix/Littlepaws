@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------------- BREADCRUMBS ------------------- */
+#bg_breadcrumbs{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: aqua;
+}
+
+#bg_sort{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: rgba(254,245,222,1.00);
+}
+
+.pagination_products{
+	text-align: center;
+	background-color: aqua;
+}
+
+.filter_block{
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: solid 1px rgba(252,204,88,1.00);
+}
