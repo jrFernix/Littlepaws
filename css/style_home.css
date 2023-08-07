@@ -1,492 +1,1222 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS HOME */
 
 /* ------------------- BANNER ------------------- */
-#bg_banner{
-	padding-bottom: 50px;
-	background: linear-gradient(to bottom, rgba(216,33,72,1.00), rgba(255,255,255,1.00));
+#bg_banner {
+	margin-bottom: 50px;
+	background: linear-gradient(to bottom, rgba(216, 33, 72, 1.00), rgba(255, 255, 255, 1.00));
 }
 
-#banner{
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.banner_home{
+#banner {
 	padding: 15px;
-	height: 600px;
-	background-color: rgba(255,255,255,1.00);
-	outline: solid 1px rgba(32,32,32,1.00);
+	background-color: rgba(255, 255, 255, 1.00);
+	border: solid 1px rgba(32, 32, 32, 1.00);
 	border-radius: 30px;
-	box-shadow: 10px 10px 0 0 rgba(252,204,88,1.00);
+	box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
 }
 
-.banner_img{
-	padding: 0;
-	margin: 0;
+/* Carousel */
+#carouselExampleIndicators {
+	height: 435px;
 }
 
-.banner_img img{
+#carouselExampleIndicators .carousel-item {
+	height: 400px;
+}
+
+#carouselExampleIndicators .carousel-item img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	outline: solid 1px rgba(32,32,32,1.00);
+}
+
+.carousel-inner {
 	border-radius: 20px;
+	border: solid 1px rgba(32, 32, 32, 1.00);
+	user-select: none;
 }
 
-.pagi_home{
-	padding-top: 30px;
+/* Prev/Next */
+.padding_button_prev,
+.padding_button_next {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	background-color: rgba(252, 204, 88, 1.00);
 }
 
-.pagi_button{
-	background-color: aqua;
+.padding_button_prev {
+	left: -65px;
+}
+
+.padding_button_next {
+	right: -65px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	height: calc(100% - 33px);
+	opacity: 0;
+}
+
+.fa_carousel {
+	text-align: center;
+	font-size: 60px;
+	line-height: 100px;
+	color: rgba(216, 33, 72, 1.00);
+}
+
+/* Indicators */
+.carousel-indicators {
+	margin: 0;
+	bottom: 0;
+}
+
+.carousel-indicators li {
+	transition: all ease 0.3s;
+	margin: 0 15px;
+	width: 16px;
+	height: 16px;
+	border: solid 1px rgba(216, 33, 72, 1.00);
+	border-radius: 100%;
+	opacity: 1;
+}
+
+.carousel-indicators li.active {
+	transition: all ease 0.3s;
+	background-color: rgba(216, 33, 72, 1.00);
+	border: solid 1px rgba(32, 32, 32, 1.00);
+	box-shadow: 0 0 0 5px rgba(252, 204, 88, 1.00);
 }
 
 /* ------------------- SEARCH PETS ------------------- */
-#search_pets{
-	padding-bottom: 50px;
+#search_pets {
+	margin-top: 100px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
-.card_pets{
-}
-
-.search_card{
-	margin-top: 30px;
-	padding: 0 15px 15px 15px;
-	color: rgba(216,33,72,1.00);
-	outline: solid 1px rgba(32,32,32,1.00);
-	border-radius: 10px;
-}
-
-.search_card img{
-	margin-bottom: 15px;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-}
-
-.search_card a{
-	margin-top: 15px;
+#search_pets a {
 	text-decoration: none;
-	color: rgba(32,32,32,1.00);
 }
 
-.search_card a:hover{
-	transition: all ease 0.3s;
-	color: rgba(216,33,72,1.00);
+/* Search button */
+.search-container {
+	margin-top: 15px;
 }
 
-.search_card:hover{
+.search-container form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 1.00);
+	border: solid 1px rgba(216, 33, 72, 1.00);
+	gap: 0px;
+}
+
+.fa_margin {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 20px;
+	color: rgba(252, 204, 88, 1.00);
+}
+
+.search-container input[type=search] {
+	padding: 0 24px;
+	width: 100%;
+	height: 60px;
+	border: none;
+}
+
+.search-container input[type=search]:focus {
+	background-color: rgba(254, 245, 222, 1.00);
+	outline: solid 1px rgba(252, 204, 88, 1.00);
+}
+
+.search-container .fa_searchpets {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 40px;
+	color: rgba(255, 255, 255, 1.00);
+	background-color: rgba(216, 33, 72, 1.00);
+	border: solid 1px rgba(216, 33, 72, 1.00);
+}
+
+.search-container button:focus {
+	outline: none;
+}
+
+/* Search card */
+.card_pets {
+	margin-top: 30px;
+}
+
+.card_pets a {
+	color: rgba(32, 32, 32, 1.00);
+}
+
+.search_card {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.search_card img {
+	height: 150px;
+	object-fit: contain;
+	margin-bottom: 30px;
 	transition: all ease 0.3s;
-	color: rgba(32,32,32,1.00);
-	box-shadow: 10px 10px 0 0 rgba(216,33,72,1.00);
+	user-select: none;
 }
 
 /* ------------------- ABOUT US ------------------- */
-#bg_aboutus{
+#bg_aboutus {
 	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
-#bg_aboutus .row{
-	margin-top: 30px;
-}
-
-#bg_aboutus .readmore_btn{
+#bg_aboutus a {
 	text-decoration: none;
 }
 
-#bg_aboutus .title_aboutus{
-	clear: both;
+#bg_aboutus .btnred {
+	margin-top: 14px;
 }
 
-#bg_aboutus .icon_60px{
-	float: left;
-	width: 60px;
-	height: 60px;
-	object-fit: cover;
-	display: block;
-}
-
-#bg_aboutus .title_h4{
-	float: left;
-	margin-left: 10px;
-}
-
-.home_cont{
+.heading_content {
 	text-align: center;
 }
 
-.cont_a, .cont_b{
-	padding-top: 30px;
-	padding-right: 30px;
+/* Title */
+.aboutus_content {
+	text-align: left;
 	display: flex;
 	flex-direction: column;
-	margin-top: auto;
-	margin-bottom: auto;
+	justify-content: center;
 }
 
-.cont_a{
-	text-align: left;
-}
-
-.cont_b{
+.aboutus_content_right {
 	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title_aboutus,
+.title_aboutus_right {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 
-.img_aboutus img{
-	margin-top: 30px;
-	width: 100%;
-	height: auto;
-	background-size: cover;
+.title_aboutus_right {
+	justify-content: flex-end;
 }
 
-/* ------------------- FEATURED PETS ------------------- */
-#bg_featured{
-	padding-top: 50px;
-	padding-bottom: 50px;
+.title_aboutus h4,
+.title_aboutus_right h4 {
+	margin: 0;
 }
 
-.card_pet{
-	margin-top: 30px;
-	background-color: rgba(254,245,222,1.00);
+.txt2 {
+	display: none;
 }
 
-.card_pet img{
-	width: 100%;
-	object-fit: cover;
-	outline: solid 1px rgba(32,32,32,1.00);
+/* Icon */
+.fa_60px {
+	display: block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(255, 255, 255, 1.00);
+	background-color: rgba(216, 33, 72, 1.00);
 	border-radius: 10px;
 }
 
-/* ------------------- OUR PROGRAMS ------------------- */
-#bg_programs{
-	padding-top: 50px;
+.fa1 {
+	display: none;
+}
+
+/* Content */
+.aboutus_content,
+.aboutus_content_right {
+	margin-top: 30px;
+}
+
+/* Image */
+.aboutus_img {
+	margin-top: 30px;
+}
+
+.aboutus_img img {
+	width: 100%;
+	height: 400px;
+	object-fit: contain;
+}
+
+/* ------------------- FEATURED PETS ------------------- */
+#bg_featured {
+	padding-top: 100px;
 	padding-bottom: 50px;
 }
 
-#bg_programs a{
+.cloud_img {
+	position: absolute;
+	top: -150px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	z-index: -1;
+}
+
+#bg_featured a {
 	text-decoration: none;
 }
 
-.home_cont2{
+.home_dogs,
+.home_cats {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.home_dogs a,
+.home_cats a {
+	color: rgba(216, 33, 72, 1.00);
+}
+
+.home_cats {
+	margin-top: 100px !important;
+}
+
+/* Card */
+.img_featured {
+	width: 100%;
+	height: 250px;
+	margin-bottom: 15px;
+	object-fit: cover;
+	outline: solid 1px rgba(252, 204, 88, 1.00);
+	border-radius: 20px;
+}
+
+.title_featured {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.owl_dogs .owl-stage {
+	display: flex;
+}
+
+.owl_dogs .card_featured {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 15px;
+	outline: solid 1px rgba(252, 204, 88, 1.00);
+	border-radius: 30px 30px 0 0;
+}
+
+.card_featured .margin_top {
+	margin-top: auto !important;
+}
+
+/* Button */
+#bg_featured .button_red {
+	margin: 0;
+}
+
+.btn_featured {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	width: 100%;
+	opacity: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 1.00);
+	outline: solid 1px rgba(32, 32, 32, 1.00);
+}
+
+.icon_fa {
+	font-size: 24px;
+	cursor: pointer;
+	user-select: none;
+	color: rgba(216, 33, 72, 1.00);
+}
+
+/* Owl Carousel */
+.owl_dogs {
+	margin-top: 15px;
+}
+
+.owl_dogs .owl-stage-outer {
+	margin: -15px;
+	padding: 15px 15px 30px;
+	width: calc(100% + 30px);
+	height: calc(100% + 30px);
+}
+
+/* box-shadow not being cut off */
+
+/* Owl Carousel - Nav */
+.owl_dogs .owl-prev,
+.owl_dogs .owl-next {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(216, 33, 72, 1.00) !important;
+	outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+	border-radius: 5px !important;
+}
+
+.owl_dogs .owl-prev i,
+.owl_dogs .owl-next i {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1.00);
+}
+
+.owl_dogs .owl-prev {
+	left: -75px;
+}
+
+.owl_dogs .owl-next {
+	right: -75px;
+}
+
+/* Owl Carousel - Dots */
+.owl_dogs .owl-dot {
+	margin: 5px 15px;
+}
+
+.owl_dogs .owl-dot:focus {
+	outline: none;
+}
+
+.owl_dogs .owl-dot.active span {
+	transition: all ease 0.3s !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-color: rgba(216, 33, 72, 1.00) !important;
+	outline: solid 1px rgba(32, 32, 32, 1.00);
+	box-shadow: 0 0 0 5px rgba(252, 204, 88, 1.00);
+}
+
+.owl_dogs .owl-dot span {
+	transition: all ease 0.3s !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-color: rgba(255, 255, 255, 1.00) !important;
+	outline: solid 1px rgba(216, 33, 72, 1.00);
+}
+
+/* ------------------- OUR PROGRAMS ------------------- */
+#bg_programs {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+#bg_programs a {
+	text-decoration: none;
+}
+
+#bg_programs .home_cont {
 	text-align: left;
 }
 
-.cont_a2{
-	margin-top: 30px;
-	display: flex;
-	flex-direction: column;
+.img_programs {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	display: inline-block;
 }
 
-.title_bordertop{
-	padding: 15px 0;
-	border-top: solid 1px rgba(252,204,88,1.00);
+.img_programs img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	vertical-align: middle;
 }
 
-.readmore_btn{
-	margin-top: auto;
-	color: rgba(216,33,72,1.00);
+
+/* ------------------- ASSISTED REHOMING ------------------- */
+#bg_rehoming {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: rgba(255, 255, 255, 1.00);
+	background-color: rgba(216, 33, 72, 1.00);
+}
+
+#bg_rehoming a {
 	text-decoration: none;
 }
 
-.readmore_btn:hover{
-	transition: all ease 0.3s;
-	color: rgba(32,32,32,1.00);
-}
-
-#accordion_programs .card{
+#bg_rehoming .btnyellow {
 	margin-top: 30px;
-	border: 0;
 }
 
-#accordion_programs .card-header{
-	cursor: pointer;
-	padding: 15px;
-	margin-bottom: 15px;
-	color: rgba(255,255,255,1.00);
-	border: 0;
-	border-top: solid 1px rgba(252,204,88,1.00);
-	background-color: rgba(216,33,72,1.00);
+#bg_rehoming .home_cont {
+	text-align: left;
 }
 
-
-#accordion_programs .card-header.collapsed{
-	color: rgba(32,32,32,1.00);
-	background-color: rgba(254,245,222,1.00);
+#bg_rehoming .home_cont h1 {
+	color: rgba(252, 204, 88, 1.00);
 }
 
-.heading4{
-	font-size: 24px;
-	font-weight: bold;
+.img_rehoming {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: inline-block;
 }
 
-#accordion_programs .card-header:after{
-	margin-top: 5px;
-	font-family: "FontAwesome";
-	content: "\f325";
-	float: right;
-}
-
-#accordion_programs .collapsed:after{
-	margin-top: 5px;
-	content: "\f322";
-}
-
-#accordion_programs .card-body{
-	padding: 0;
-	margin-bottom: 15px;
-}
-
-/* ------------------- ASSISTED REHOMING ------------------- */
-#bg_rehoming{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	color: rgba(255,255,255,1.00);
-	background-color: rgba(216,33,72,1.00);
+.img_rehoming img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	vertical-align: middle;
 }
 
 /* ------------------- VOLUNTEERS ------------------- */
-#bg_volunteers{
+#bg_volunteers {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-.img_volunteers{
-	height: 250px;
-	margin-top: 30px;
-	background-color: aqua;
+.heart_left_img {
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 100px;
+	object-fit: contain;
+	z-index: -1;
 }
 
-#accordion_volunteers .card{
-	margin-top: 30px;
-	border: 0;
+.heart_right_img {
+	position: absolute;
+	top: 0;
+	right: -50px;
+	width: 100px;
+	object-fit: contain;
+	z-index: -1;
 }
 
-#accordion_volunteers .card-header{
-	cursor: pointer;
-	padding: 15px;
-	margin-bottom: 15px;
-	color: rgba(255,255,255,1.00);
-	border: 0;
-	border-top: solid 1px rgba(252,204,88,1.00);
-	background-color: rgba(216,33,72,1.00);
+#bg_volunteers a {
+	text-decoration: none;
 }
 
-#accordion_volunteers .card-header.collapsed{
-	color: rgba(32,32,32,1.00);
-	background-color: rgba(254,245,222,1.00);
-}
-
-#accordion_volunteers .card-header:after{
-	margin-top: 5px;
-	font-family: "FontAwesome";
-	content: "\f325";
-	float: right;
-}
-
-#accordion_volunteers .collapsed:after{
-	margin-top: 5px;
-	content: "\f322";
-}
-
-#accordion_volunteers .card-body{
-	padding: 0;
-	margin-bottom: 15px;
-}
-
-/* ------------------- SUBSCRIBE ------------------- */
-#bg_subscribe{
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-/* ------------------- PARTNERS ------------------- */
-#bg_partners{
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-#bg_partners .margin_owlcar{
-	margin-top: 30px;
-}
-
-#bg_partners .card_carousel{
+#bg_volunteers .home_cont {
 	text-align: center;
 }
 
-#bg_partners .card_carousel h6{
+#bg_volunteers .home_cont p {
+	margin-bottom: 0;
+}
+
+#bg_volunteers .btnred {
+	margin-top: 30px;
+}
+
+.volunteer_mobile {
+	margin-top: 30px;
+}
+
+.volunteer_mobile h4 {
+	margin: 0;
+}
+
+.volunteer_mobile .btn_footer {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: solid 1px rgba(252, 204, 88, 1.00);
+}
+
+.volunteer_mobile .cont_a2 {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 30px;
+	border-top: none;
+}
+
+/* ------------------- PARTNERS ------------------- */
+#bg_partners {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#bg_partners p {
+	margin: 0;
+}
+
+/* Owl Carousel */
+.owl_partners {
+	margin-top: 15px;
+}
+
+.owl_partners .owl-stage-outer {
+	margin: -15px;
+	padding: 15px 15px 30px;
+	width: calc(100% + 30px);
+	height: calc(100% + 30px);
+}
+
+/* box-shadow not being cut off */
+
+.card_partners {
+	text-align: center;
+}
+
+.card_partners h6 {
 	margin: 15px 0 0;
 }
 
-#bg_partners .img_partners img{
+.img_partners img {
 	width: 100%;
 	height: 160px;
 	object-fit: contain;
 	padding: 15px;
-	background-color: rgba(252,204,88,1.00);
+	background-color: rgba(252, 204, 88, 1.00);
 	border-radius: 20px;
 }
 
-/* Owl Carousel - Button */
-#bg_partners .owl-prev,
-#bg_partners .owl-next{
-    width: 60px;
-    height: 60px;
+/* Owl Carousel - Nav */
+.owl_partners .owl-prev,
+.owl_partners .owl-next {
+	width: 36px;
+	height: 36px;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	display: block!important;
-	color: rgba(255,255,255,1.00);
-	background-color: rgba(216,33,72,1.00);
-	border: solid 1px rgba(216,33,72,0);
-	border-radius: 10px;
+	background-color: rgba(216, 33, 72, 1.00) !important;
+	outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+	border-radius: 5px !important;
 }
 
-#bg_partners .owl-prev i,
-#bg_partners .owl-next i{
-	color: rgba(255,255,255,1.00);
-	transform : scale(2,2);
+
+.owl_partners .owl-prev i,
+.owl_partners .owl-next i {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1.00);
 }
 
-#bg_partners .owl-prev:hover,
-#bg_partners .owl-next:hover{
-	color: rgba(32,32,32,1.00)!important;
-	background-color: rgba(252,204,88,1.00);
-	border: solid 1px rgba(32,32,32,1.00);
-	border-radius: 10px;
-	box-shadow: 5px 5px 0 0 rgba(216,33,72,1.00);
+.owl_partners .owl-prev {
+	left: -75px;
 }
 
-#bg_partners .owl-prev:focus,
-#bg_partners .owl-next:focus{
-	outline: none;
+.owl_partners .owl-next {
+	right: -75px;
 }
 
-#bg_partners .owl-prev:hover i,
-#bg_partners .owl-next:hover i{
-	color: rgba(32,32,32,1.00);
-}
-
-#bg_partners .owl-prev{
-	left: -80px;
-}
-
-#bg_partners .owl-next {
-	right: -80px;
-}
-
-/* Owl-dots */
-#bg_partners .owl-dots button.owl-dot.active span{
-	width: 16px;
-	height: 16px;
-	margin: 0;
-	background-color: rgba(216,33,72,1.00);
-	box-shadow: 0 0 0 5px rgba(252,204,88,1.00);
-}
-
-#bg_partners .owl-dots button.owl-dot span{
-	width: 16px;
-	height: 16px;
-	margin: 0;
-	background-color: rgba(255,255,255,1.00);
-	border: solid 1px rgba(216,33,72,1.00);
-}
-
-#bg_partners .owl-dots button.owl-dot span:hover{
-	border: none;
-	background-color: rgba(232,122,145,1.00);
-}
-
-#bg_partners .owl-dots button.owl-dot{
+/* Owl Carousel - Dots */
+.owl_partners .owl-dot {
 	margin: 0 15px;
 }
 
-#bg_partners .owl-dots button.owl-dot:focus{
+.owl_partners .owl-dot:focus {
 	outline: none;
 }
 
-/* LG */
-@media (min-width: 992px) and (max-width: 1199px){
+.owl_partners .owl-dot.active span {
+	transition: all ease 0.3s !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-color: rgba(216, 33, 72, 1.00) !important;
+	outline: solid 1px rgba(32, 32, 32, 1.00);
+	box-shadow: 0 0 0 5px rgba(252, 204, 88, 1.00);
 }
 
-/* MD */
-@media (min-width: 768px) and (max-width: 991px){
+.owl_partners .owl-dot span {
+	transition: all ease 0.3s !important;
+	width: 16px !important;
+	height: 16px !important;
+	background-color: rgba(255, 255, 255, 1.00) !important;
+	outline: solid 1px rgba(216, 33, 72, 1.00);
 }
 
-/* SM */
-@media (min-width: 576px) and (max-width: 767px){
-	#banner{
-		padding-left: 15px;
-		padding-right: 15px;
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- XL ------------------- */
+@media (min-width: 1200px) {
+
+	/* ------------------- SEARCH PETS ------------------- */
+	/* Search card */
+	.card_pets:hover a {
+		color: rgba(216, 33, 72, 1.00);
 	}
-	
-	.img_aboutus{
-		margin-bottom: 30px;
+
+	.card_pets:hover img {
+		transition: all ease 0.3s;
+		transform: scale(1.1);
 	}
-	
-	#bg_aboutus .cont_b{
+
+	/* ------------------- FEATURED PETS ------------------- */
+	.home_dogs a:hover,
+	.home_cats a:hover {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+	/* Card */
+	.card_featured:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(255, 255, 255, 1.00);
+		outline: solid 1px rgba(32, 32, 32, 1.00);
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	.card_featured:hover .btn_featured {
+		opacity: 1;
+		bottom: -60px;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+		transition: box-shadow ease 0.3s;
+	}
+
+	.icon_fa:hover {
+		color: rgba(232, 122, 145, 1.00);
+	}
+
+	/* Owl Carousel - Nav */
+	.owl_dogs .owl-prev:hover,
+	.owl_dogs .owl-next:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(252, 204, 88, 1.00) !important;
+		outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+		border-radius: 5px !important;
+		box-shadow: 5px 5px 0 0 rgba(216, 33, 72, 1.00);
+	}
+
+	.owl_dogs .owl-prev:hover i,
+	.owl_dogs .owl-next:hover i {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+	/* Owl Carousel - Dots */
+	.owl_dogs .owl-dot span:hover {
+		background-color: rgba(232, 122, 145, 1.00) !important;
+		outline: none;
+	}
+
+	/* ------------------- PARTNERS ------------------- */
+	.img_partners img:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(255, 255, 255, 1.00);
+		outline: solid 1px rgba(32, 32, 32, 1.00);
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* Owl Carousel - Nav */
+	.owl_partners .owl-prev:hover,
+	.owl_partners .owl-next:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(252, 204, 88, 1.00) !important;
+		outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+		border-radius: 5px !important;
+		box-shadow: 5px 5px 0 0 rgba(216, 33, 72, 1.00);
+	}
+
+	.owl_partners .owl-prev:hover i,
+	.owl_partners .owl-next:hover i {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+
+	/* Owl Carousel - Dots */
+	.owl_partners .owl-dot span:hover {
+		background-color: rgba(232, 122, 145, 1.00) !important;
+		outline: none;
+	}
+
+	/* ------------------- BANNER ------------------- */
+	/* Indicators */
+	.carousel-indicators li:hover {
+		background-color: rgba(232, 122, 145, 1.00);
+		border: solid 1px rgba(232, 122, 145, 1.00);
+	}
+}
+
+/* ------------------- LG ------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/* ------------------- SEARCH PETS ------------------- */
+	/* Search card */
+	.card_pets:hover a {
+		color: rgba(216, 33, 72, 1.00);
+	}
+
+	.card_pets:hover img {
+		transition: all ease 0.3s;
+		transform: scale(1.1);
+	}
+
+	/* ------------------- FEATURED PETS ------------------- */
+	.home_dogs a:hover,
+	.home_cats a:hover {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+	/* Card */
+	.card_featured:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(255, 255, 255, 1.00);
+		outline: solid 1px rgba(32, 32, 32, 1.00);
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	.card_featured:hover .btn_featured {
+		opacity: 1;
+		bottom: -60px;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+		transition: box-shadow ease 0.3s;
+	}
+
+	.icon_fa:hover {
+		color: rgba(232, 122, 145, 1.00);
+	}
+
+	/* Owl Carousel - Nav */
+	.owl_dogs .owl-prev:hover,
+	.owl_dogs .owl-next:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(252, 204, 88, 1.00) !important;
+		outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+		border-radius: 5px !important;
+		box-shadow: 5px 5px 0 0 rgba(216, 33, 72, 1.00);
+	}
+
+	.owl_dogs .owl-prev:hover i,
+	.owl_dogs .owl-next:hover i {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+	/* Owl Carousel - Dots */
+	.owl_dogs .owl-dot span:hover {
+		background-color: rgba(232, 122, 145, 1.00) !important;
+		outline: none;
+	}
+
+	/* ------------------- PARTNERS ------------------- */
+	.img_partners img:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(255, 255, 255, 1.00);
+		outline: solid 1px rgba(32, 32, 32, 1.00);
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* Owl Carousel - Nav */
+	.owl_partners .owl-prev:hover,
+	.owl_partners .owl-next:hover {
+		transition: all ease 0.3s;
+		background-color: rgba(252, 204, 88, 1.00) !important;
+		outline: solid 1px rgba(32, 32, 32, 1.00) !important;
+		border-radius: 5px !important;
+		box-shadow: 5px 5px 0 0 rgba(216, 33, 72, 1.00);
+	}
+
+	.owl_partners .owl-prev:hover i,
+	.owl_partners .owl-next:hover i {
+		transition: all ease 0.3s;
+		color: rgba(32, 32, 32, 1.00);
+	}
+
+
+	/* Owl Carousel - Dots */
+	.owl_partners .owl-dot span:hover {
+		background-color: rgba(232, 122, 145, 1.00) !important;
+		outline: none;
+	}
+
+	/* ------------------- BANNER ------------------- */
+	/* Indicators */
+	.carousel-indicators li:hover {
+		background-color: rgba(232, 122, 145, 1.00);
+		border: solid 1px rgba(232, 122, 145, 1.00);
+	}
+
+	/* ------------------- FEATURED PETS ------------------- */
+	/* Button */
+	#bg_featured .fa2 {
+		display: none;
+	}
+}
+
+/* ------------------- MD ------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/* ------------------- BANNER ------------------- */
+	#carouselExampleIndicators .carousel-control-prev .padding_button_prev,
+	#carouselExampleIndicators .carousel-control-next .padding_button_next {
+		display: none;
+	}
+
+	/* ------------------- SEARCH PETS ------------------- */
+	.search-container form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fa_margin {
+		display: none;
+	}
+
+	.btn_search_pets {
+		width: 100%;
+	}
+
+	.search-container input[type=search],
+	.search-container .fa_searchpets {
+		width: 100%;
+	}
+
+	.search_card img {
+		height: 150px;
+	}
+
+	/* ------------------- ABOUT US ------------------- */
+	/* Content */
+	.txt1 {
+		display: none;
+	}
+
+	.txt2 {
+		display: block;
+	}
+
+	/* Icon */
+	.fa1 {
+		display: none;
+	}
+
+	.fa2 {
+		display: block;
+	}
+
+	/* Image */
+	.aboutus_img {
+		margin-top: 50px;
+	}
+
+	/* ------------------- FEATURED PETS ------------------- */
+	/* Card */
+	.card_featured {
+		outline: solid 1px rgba(32, 32, 32, 1.00) ! important;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* Style */
+	.home_dogs,
+	.home_cats {
+		flex-direction: column;
+	}
+
+	/* Button */
+	#bg_featured .fa2 {
+		display: none;
+	}
+
+	.btn_featured {
+		opacity: 1;
+		bottom: -60px;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	.cloud_img {
+		top: -100px;
+	}
+
+	/* ------------------- OUR PROGRAMS ------------------- */
+	/* Style */
+	#bg_programs .home_cont {
+		text-align: center;
+	}
+
+	/* Image */
+	#bg_programs .img_programs {
+		margin-top: 30px;
+	}
+
+	/* ------------------- ASSISTED REHOMING ------------------- */
+	/* Style */
+	#bg_rehoming .title_align_center {
+		text-align: center;
+	}
+
+	#bg_rehoming .home_cont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.img_rehoming {
+		height: 300px;
+		margin-top: 30px;
+	}
+}
+
+/* ------------------- SM ------------------- */
+@media (min-width: 576px) and (max-width: 767px) {
+
+	/* ------------------- BANNER ------------------- */
+	#carouselExampleIndicators .carousel-control-prev .padding_button_prev,
+	#carouselExampleIndicators .carousel-control-next .padding_button_next {
+		display: none;
+	}
+
+	/* ------------------- SEARCH PETS ------------------- */
+	.search-container form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fa_margin {
+		display: none;
+	}
+
+	.btn_search_pets {
+		width: 100%;
+	}
+
+	.search-container input[type=search],
+	.search-container .fa_searchpets {
+		width: 100%;
+	}
+
+	.search_card img {
+		height: 150px;
+	}
+
+	/* ------------------- ABOUT US ------------------- */
+	/* Content */
+	.aboutus_content_right {
 		text-align: left;
 	}
-	
-	#bg_aboutus .readmore_btn{
-		margin-top: 15px;
+
+	.txt1 {
+		display: none;
+	}
+
+	.txt2 {
+		display: block;
+	}
+
+	/* Icon */
+	.fa1 {
+		display: block;
+	}
+
+	.fa2 {
+		display: none;
+	}
+
+	/* Image */
+	.aboutus_img {
+		margin-top: 50px;
+	}
+
+	.aboutus_img img {
+		height: 300px;
+	}
+
+	/* ------------------- FEATURED PETS ------------------- */
+	/* Card */
+	.card_featured {
+		outline: solid 1px rgba(32, 32, 32, 1.00) ! important;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* Style */
+	.home_dogs,
+	.home_cats {
+		flex-direction: column;
+	}
+
+	/* Button */
+	#bg_featured .fa2 {
+		display: none;
+	}
+
+	.btn_featured {
+		opacity: 1;
+		bottom: -60px;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* ------------------- OUR PROGRAMS ------------------- */
+	/* Style */
+	#bg_programs .home_cont {
 		text-align: center;
-		padding: 8px;
-		color: rgba(255,255,255,1.00);
-		background-color: rgba(216,33,72,1.00);
-		outline: solid 1px rgba(32,32,32,1.00);
-		border-radius: 5px;
 	}
-	
-	#bg_aboutus .readmore_btn:hover{
-		color: rgba(32,32,32,1.00);
-		background-color: rgba(252,204,88,1.00);
-		box-shadow: 5px 5px 0 0 rgba(216,33,72,1.00);
+
+	/* Image */
+	#bg_programs .img_programs {
+		margin-top: 30px;
 	}
-	
-	#bg_partners .owl-prev,
-	#bg_partners .owl-next{
-		display: none!important;
+
+	/* ------------------- ASSISTED REHOMING ------------------- */
+	/* Style */
+	#bg_rehoming .title_align_center {
+		text-align: center;
+	}
+
+	#bg_rehoming .home_cont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.img_rehoming {
+		height: 300px;
+		margin-top: 30px;
 	}
 }
 
-/* XS */
-@media (max-width: 575px){
-	#banner{
-		padding-left: 15px;
-		padding-right: 15px;
+/* ------------------- XS ------------------- */
+@media (max-width: 575px) {
+
+	/* ------------------- BANNER ------------------- */
+	#carouselExampleIndicators .carousel-control-prev .padding_button_prev,
+	#carouselExampleIndicators .carousel-control-next .padding_button_next {
+		display: none;
 	}
-	
-	.img_aboutus{
-		margin-bottom: 30px;
+
+	/* ------------------- SEARCH PETS ------------------- */
+	.search-container form {
+		display: flex;
+		flex-direction: column;
 	}
-	
-	#bg_aboutus .cont_b{
+
+	.fa_margin {
+		display: none;
+	}
+
+	.btn_search_pets {
+		width: 100%;
+	}
+
+	.search-container input[type=search],
+	.search-container .fa_searchpets {
+		width: 100%;
+	}
+
+	.search_card img {
+		height: 130px;
+	}
+
+	/* ------------------- ABOUT US ------------------- */
+	/* Content */
+	.aboutus_content_right {
 		text-align: left;
 	}
-	
-	#bg_aboutus .readmore_btn{
-		margin-top: 15px;
+
+	.txt1 {
+		display: none;
+	}
+
+	.txt2 {
+		display: block;
+	}
+
+	/* Icon */
+	.fa1 {
+		display: block;
+	}
+
+	.fa2 {
+		display: none;
+	}
+
+	/* Image */
+	.aboutus_img {
+		margin-top: 50px;
+	}
+
+	.aboutus_img img {
+		height: 300px;
+	}
+
+	/* ------------------- FEATURED PETS ------------------- */
+	/* Card */
+	.card_featured {
+		outline: solid 1px rgba(32, 32, 32, 1.00) ! important;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* Style */
+	.home_dogs,
+	.home_cats {
+		flex-direction: column;
+	}
+
+	/* Button */
+	#bg_featured .fa2 {
+		display: none;
+	}
+
+	.btn_featured {
+		opacity: 1;
+		bottom: -60px;
+		box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1.00);
+	}
+
+	/* ------------------- OUR PROGRAMS ------------------- */
+	/* Style */
+	#bg_programs .home_cont {
 		text-align: center;
-		padding: 8px;
-		color: rgba(255,255,255,1.00);
-		background-color: rgba(216,33,72,1.00);
-		outline: solid 1px rgba(32,32,32,1.00);
-		border-radius: 5px;
 	}
-	
-	#bg_aboutus .readmore_btn:hover{
-		color: rgba(32,32,32,1.00);
-		background-color: rgba(252,204,88,1.00);
-		box-shadow: 5px 5px 0 0 rgba(216,33,72,1.00);
+
+	/* Image */
+	#bg_programs .img_programs {
+		margin-top: 30px;
 	}
-	
-	#bg_partners .owl-prev,
-	#bg_partners .owl-next{
-		display: none!important;
+
+	/* ------------------- ASSISTED REHOMING ------------------- */
+	/* Style */
+	#bg_rehoming .title_align_center {
+		text-align: center;
+	}
+
+	#bg_rehoming .home_cont {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.img_rehoming {
+		height: 300px;
+		margin-top: 30px;
+	}
+
+	/* ------------------- VOLUNTEER ------------------- */
+	.heart_left_img {
+		top: -15px;
+		left: 0;
+	}
+
+	.heart_right_img {
+		top: -15px;
+		right: 0;
 	}
 }

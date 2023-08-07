@@ -1,112 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CSS -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="css/style_common.css" rel="stylesheet">
-	<link href="css/style_home.css" rel="stylesheet">
-	<link href="css/style_detail.css" rel="stylesheet">
-	<link href="css/all.min.css" rel="stylesheet">
-	
-	<!-- JS -->
-	<script src="js/jquery-3.4.1.min.js"></script> 
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.4.1.js"></script>
-	
-	<!-- Title -->
-	<title>The littlepaws's Detail Page</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/style_common.css" rel="stylesheet" />
+  <link href="css/style_home.css" rel="stylesheet" />
+  <link href="css/style_products.css" rel="stylesheet" />
+  <link href="css/style_detail.css" rel="stylesheet" />
+
+  <!-- Owl Carousel CSS -->
+  <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+
+  <!-- Title -->
+  <title>The littlepaws's Detail Page</title>
 </head>
+
 <body>
-	<!------------------- DETAIL ------------------->
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-4">
-				<h1>Nem</h1>
-				<h4>Loving and loyal</h4>
-				<h5>Medium Female Pembroke Corgi</h5>
-				<p>Posted 10 days ago</p>
-			</div>
-			<div class="offset-xl-4 col-xl-4">
-				<a href=""><div class="button_red">PRINT AN ADOPTION POSTER</div></a>
-			</div>
-			
-			<div class="col-xl-12 img_detail">Img</div>
-			
-			<div class="col-xl-8">
-				<h4>About Hannah</h4>
-				<p>Nem is a very loving girl who is well mannered and quiet. She lives to quietly follow you around and would make an excellent companion.</p>
-				
-				<p>She is great with:
-					<br>People likes children and elderly.
-					<br>She has so far ignored cats.</p>
-				
-				<p>She is not great with dogs smaller than her - she can be a little possessive of her owner and can get jealous. She has been very good when walking with other dogs and out and about.</p>
-				
-				<h4>Medical notes</h4>
-				<p>She is a brachycephalic breed that is always at risk of boas ( brachycephalic obstructive airway syndrome). We expect you to have a complete understanding of the condition and discuss the potential surgical, environmental and medical modifications you may have to do for this condition with your vet.</p>
-				
-				<p>She is very healthy and has passed all of his vet checks. She has not had airway surgery as she breathes very well but this is something that may need to be done in the future.</p>
-				
-				<p>Hannah had to have some scars removed from her forehead, this is healing very well and will cause her no further problems.</p>
-				
-				<p>She has minor allergies controlled by food and bathing.</p>
-				
-				<h4>Adoption process</h4>
-				<p>This organisation's adoption policy is <span class="redtext">Moderate</span></p>
-				
-				<p>When you have seen your special new friend that you would like to meet, please email us and we will send an adoption application to applicants we deem suitable.</p>
-				
-				<p>1. Submit application<br>
-					2. Interview<br>
-					3. Meet the pet<br>
-					4. Pay fee<br>
-					5. Sign adoption contract</p>
-				
-				<a href=""><div class="button_red">APPLY TO ADOPT [ NEM ]</div></a>
-				<a href=""><div class="button_yellow">Contact us</div></a>
-			</div>
-			<div class="col-xl-4">
-				<div class="information_pet">
-					<p>RESCUE GROUP
-					<br>AssistedRehoming Program</p>
-					
-					<p>STATUS<br>
-					ADOPTABLE</p>
-					
-					<p>littlepaws PF. ID<br>
-					978529</p>
-					
-					<p>LOCATION<br>GIC Tower, 275 Nguyen Van Dau, Ward 11, Binh Thanh District, Ho Chi Minh City, Vietnam</p>
-					
-					<p>AGE<br>
-						5 years 3 months</p>
-					
-					<p>ADOPTION FEE<br>
-					2,000,000 VND</p>
-					
-					<p>MICROCHIP NUMBER<br>
-					991003000072896</p>
-					
-					<p>BREEDER IDENTIFICATION<br>
-					BIN0004293536065</p>
-					
-					<p>LAST UPDATED<br>
-					15 Jul, 2023</p>
-				</div>
-				<div class="status_pet">
-					<p>Desexed<br>
-					Vaccinated<br>
-					Interstate adoption<br>
-					Wormed<br>
-					Has received heartworm preventative</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- end DETAIL ------------------->
+  <!-- BREADCRUMB -->
+  <div class="container" id="bg_breadcrumb">
+    <div class="row">
+      <div class="col-xl-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb edit_breadcrumb">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="product.html">The littlepaws PF. search</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="product_dogs.html">Dogs and Puppies adoption</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Dogs available for adoption
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- end container | BREADCRUMB -->
+
+  <!------------------- NAME ------------------->
+  <div class="container" id="bg_name">
+    <div class="row">
+      <!-- Name -->
+      <div class="col-xl-12 name_cont">
+        <!-- Name -->
+        <div class="name_pet">
+          <h1 class="txtred">Nem</h1>
+          <h4 class="mb-0">Loving and royal</h4>
+          <h6 class="mb-0">Medium Female Prembroke Corgi</h6>
+          <p class="font_caption mb-0">Posted 10 days ago</p>
+        </div>
+        <!-- Button -->
+        <a href="#" class="btnred"><i class="fa-solid fa-print"></i> PRINT AN ADOPTION POSTER</a>
+      </div><!-- end | Name-->
+
+      <!-- Image -->
+      <div class="col-xl-8
+      col-lg-8">
+        <div id="img_big">
+          <img src="img/Nem 1.jpg" alt="Nem" />
+        </div>
+      </div>
+
+      <div class="col-xl-4
+      col-lg-4" id="img_thumb">
+        <img src="img/Nem 1.jpg" alt="Nem 1" />
+        <img src="img/Nem 2.jpg" alt="Nem 2" />
+        <img src="img/Nem 3.jpg" alt="Nem 3" />
+        <img src="img/Nem 4.jpg" alt="Nem 4" />
+        <img src="img/Nem 5.jpg" alt="Nem 5" />
+        <img src="img/Nem 6.jpg" alt="Nem 6" />
+      </div><!-- end | Image -->
+    </div>
+  </div><!------------------- end container | NAME ------------------->
+
+  <!------------------- INFO ------------------->
+  <div class="container" id="bg_info">
+    <div class="row">
+      <!-- DESCRIBE -->
+      <div class="col-xl-8
+      col-lg-8
+      col-md-8 order-md-1
+      col-sm-12
+      col-12 order-2" id="describe_cont">
+        <!-- About -->
+        <div class="text_info">
+          <h4 class="txtred"><i class="fa-solid fa-dog fa_cardicon"></i> About Nem</h4>
+          <p>Nem is a very loving girl who is well mannered and quiet. She lives to quietly follow you around and would
+            make an excellent companion.</p>
+          <p>She is great with:
+          <ul>
+            <li>People likes children and elderly.</li>
+            <li>She has so far ignored cats.</li>
+          </ul>
+          </p>
+          <p>She is not great with dogs smaller than her - she can be a little possessive of her owner and can get
+            jealous.She has been very good when walking with other dogs and out and about.</p>
+        </div><!-- end | About -->
+
+        <!-- Medical notes -->
+        <div class="text_info">
+          <h4 class="txtred"><i class="fa-solid fa-briefcase-medical fa_cardicon"></i> Medical notes</h4>
+          <p>She is a brachycephalic breed that is always at risk of boas ( brachycephalic obstructive airway syndrome).
+            We expect you to have a complete understanding of the condition and discuss the potential surgical,
+            environmental and medical modifications you may have to do for this condition with your vet.</p>
+          <p>She is very healthy and has passed all of his vet checks. She has not had airway surgery as she breathes
+            very well but this is something that may need to be done in the future.</p>
+          <p>Hannah had to have some scars removed from her forehead, this is healing very well and will cause her no
+            further problems.</p>
+          <p>She has minor allergies controlled by food and bathing.</p>
+        </div><!-- end | Medical notes -->
+
+        <!-- Adoption progress -->
+        <div class="text_info">
+          <h4 class="txtred"><i class="fa-solid fa-project-diagram fa_cardicon"></i> Adoption progress</h4>
+          <h6>This organisation's adoption policy is <a href="privacypolicy.html" class="txtred">Moderate</a></h6>
+          <p>When you have seen your special new friend that you would like to meet, please email us and we will send an
+            adoption application to applicants we deem suitable.
+          <ol class="font_sub">
+            <li>Submit application</li>
+            <li>Interview</li>
+            <li>Meet the pet</li>
+            <li>Pay fee</li>
+            <li>Sign adoption contract</li>
+          </ol>
+          </p>
+        </div><!-- end | Adoption progress -->
+
+        <!-- Button -->
+        <div class="align_btn_center">
+          <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY TO ADOPT [ Nem ]</a>
+          <a href="contactus.html" class="btnyellow"><i class="fa-solid fa-phone"></i> Contact Us</a>
+        </div><!-- end | Button -->
+      </div><!-- end | DESCRIBE -->
+
+      <!-- INFORMATION -->
+      <div class="col-xl-4
+      col-lg-4
+      col-md-4 order-md-2
+      col-sm-12
+      col-12 order-1">
+        <!-- Info adoptable -->
+        <div class="info_adoptable">
+          <h6 class="txtred">RESCUE GROUP<br>
+            AssistedRehoming™ PROGRAM</h6>
+          <h6 class="txtred">STATUS<br>
+            ADOPTABLE</h6>
+          <p><span class="font_sub txtred">littlepaws PF.'s ID</span><br>
+            987654</p>
+          <p><span class="font_sub txtred">LOCATION</span><br>
+            GIC Tower, 275 Nguyen Van Dau, Ward 11, Binh Thanh District, Ho Chi Minh City, Vietnam</p>
+          <p><span class="font_sub txtred">AGE</span><br>
+            2 years 2 months</p>
+          <p><span class="font_sub txtred">ADOPTION FEE</span><br>
+            987654</p>
+          <p><span class="font_sub txtred">MICROCHIP NUMBER</span><br>
+            15,000,000 VND</p>
+          <p><span class="font_sub txtred">BREEDER IDENTIFICATION</span><br>
+            BIN0004293536065</p>
+          <p><span class="font_sub txtred">LAST UPDATED</span><br>
+            01 Aug, 2023</p>
+        </div><!-- end | Info adoptable -->
+
+        <!-- Info vax -->
+        <div class="info_vax">
+          <p><i class="fa-solid fa-check text-success icon_fixed"></i> Desexed</p>
+          <p><i class="fa-solid fa-check text-success icon_fixed"></i> Vaccinated</p>
+          <p><i class="fa-solid fa-xmark text-danger icon_fixed"></i> Interstate adoption</p>
+          <p><i class="fa-solid fa-check text-success icon_fixed"></i> Wormed</p>
+          <p><i class="fa-solid fa-check text-success icon_fixed"></i> Has received heartworm preventative</p>
+        </div><!-- end | Info vax -->
+      </div><!-- end | INFORMATION -->
+    </div>
+  </div><!------------------- end container | INFO ------------------->
+
+  <!-- JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+
+  <!-- Script change img -->
+  <script>
+    $(document).ready(function () {
+      $("#img_thumb img").click(function () {
+        var linkimg = $(this).attr("src");
+
+        $("#img_thumb img").removeClass("click_img");
+        $(this).addClass("click_img");
+
+        $("#img_big img").fadeOut(200, function () {
+          $("#img_big img").attr("src", linkimg);
+          $("#img_big img").fadeIn(200);
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>

@@ -1,3 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+.btn{
+	display: flex;
+	align-items: center;
+}
+
+.fill_text{
+	margin-right: 20px;
+}
+
+.nav{
+	display: block;
+}

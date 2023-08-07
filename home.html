@@ -1,1021 +1,2275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- CSS -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="css/style_common.css" rel="stylesheet">
-	<link href="css/style_home.css" rel="stylesheet">
-	<link href="css/all.min.css" rel="stylesheet">
-	
-	<!-- JS -->
-	<script src="js/jquery-3.4.1.min.js"></script> 
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.4.1.js"></script>
-	
-	<!-- Title -->
-	<title>The littlepaws's Home Page</title>
+  <!-- CSS -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/style_common.css" rel="stylesheet" />
+  <link href="css/style_home.css" rel="stylesheet" />
+
+  <!-- Owl Carousel CSS -->
+  <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+
+  <!-- Title -->
+  <title>The littlepaws's Home Page</title>
 </head>
+
 <body>
-	<!------------------- NAVIGATION ------------------->
-	<div class="container-fluid" id="bg_nav">
-		<div class="container" id="nav">
-			<div class="row">
-				<!-- Header large -->
-				<div class="col-xl-12
-							col-lg-12
-							col-md-12 d-md-block
-							d-none nav_header">
-					<!-- Left Header -->
-					<ul class="header_left">
-						<li><a href="" class="readmore_btn">Contact us</a></li>
-						<li><a href="" class="readmore_btn">Donate</a></li>
-						<li><a href="" class="readmore_btn">Fundraise</a></li>
-					</ul>
-					
-					<!-- Right Header -->
-					<ul class="header_right">
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-magnifying-glass fa-lg"></i></a></li>
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-heart fa-lg"></i></a></li>
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-circle-user fa-2xl"></i></a></li>
-						<li><a href=""><div class="button_yellow">Log In</div></a></li>
-						<li><a href=""><div class="button_red">Sign Up</div></a></li>
-					</ul>
-					<div class="float-none"></div>
-				</div>
-				
-				<!-- Header small -->
-				<div class="d-md-none
-							col-12 nav_header">
-					<!-- Left Header -->
-					<ul class="header_left">
-						<li><a href=""><div class="button_yellow">Log In</div></a></li>
-						<li><a href=""><div class="button_red">Sign Up</div></a></li>
-					</ul>
-					
-					<!-- Right Header -->
-					<ul class="header_right">
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-magnifying-glass fa-lg"></i></a></li>
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-heart fa-lg"></i></a></li>
-						<li><a href="" class="readmore_btn"><i class="fa-regular fa-circle-user fa-2xl"></i></a></li>
-					</ul>
-					<div class="float-none"></div>
-				</div>
-				<hr>
-				<div class="col-xl-3
-							col-lg-3
-							col-md-12
-							col-sm-8
-							col-8 nav_logo">
-					<img src="img/Logo-40px.png" alt="littlepaws's Logo">
-				</div>
-				<div class="col-xl-9
-							col-lg-9
-							col-md-12 d-md-block
-							d-none" id="nav_dropmenu">
-					<div class="dropdown">
-						<ul class="nav">
-							<!-- About us -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Our Story</a>
-									<a class="dropdown-item" href="#">Our Mission &amp; Vision</a>
-									<a class="dropdown-item" href="#">Our Team</a>
-									<a class="dropdown-item" href="#">Partners, Sponsors &amp; Supporters</a>
-									<a class="dropdown-item" href="#">Careers</a>
-								</div>
-							</li>
-							
-							<!-- Dogs -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">DOGS</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">View all Dogs</a>
-									<a class="dropdown-item" href="#">Senior Dogs</a>
-									<a class="dropdown-item" href="#">Bonded Dogs</a>
-									<a class="dropdown-item" href="#">Dogs looking for Foster care</a>
-									<a class="dropdown-item" href="#">FAQs</a>
-								</div>
-							</li>
-							
-							<!-- Cats -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CATS</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">View all Cats</a>
-									<a class="dropdown-item" href="#">Senior Cats</a>
-									<a class="dropdown-item" href="#">Bonded Cats</a>
-									<a class="dropdown-item" href="#">Cats looking for Foster care</a>
-									<a class="dropdown-item" href="#">FAQs</a>
-								</div>
-							</li>
-							
-							<!-- Assisted rehoming -->
-							<li class="nav-item">
-								<a class="nav-link" href="#">ASSISTED REHOMING</a>
-							</li>
-							
-							<!-- Our programs -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">OUR PROGRAMS</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Sitting</a>
-									<a class="dropdown-item" href="#">Grooming</a>
-									<a class="dropdown-item" href="#">Vetting</a>
-									<a class="dropdown-item" href="#">Spay &amp; Neuter</a>
-									<a class="dropdown-item" href="#">Training</a>
-									<a class="dropdown-item" href="#">Cremation</a>
-								</div>
-							</li>
-							
-							<!-- Volunteer -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">VOLUNTEER</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Volunteer Opportunities</a>
-									<a class="dropdown-item" href="#">Become a Foster</a>
-									<a class="dropdown-item" href="#">Donate</a>
-									<a class="dropdown-item" href="#">Fundraise</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="d-md-none
-							col-sm-4
-							col-4" id="ham_menu">
-					<div class="dropdown">
-						<ul class="nav">
-							<!-- About us -->
-							<li class="nav-item dropdown">
-								<a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-bars fa-xl"></i></a>
-								<div class="dropdown-menu dropdown-menu-right">
-									<a class="dropdown-item" href="#">ABOUT US</a>
-									<a class="dropdown-item" href="#">DOGS</a>
-									<a class="dropdown-item" href="#">CATS</a>
-									<a class="dropdown-item" href="#">ASSISTED REHOMING</a>
-									<a class="dropdown-item" href="#">OUR PROGRAMS</a>
-									<a class="dropdown-item" href="#">BLOGS</a>
-									<a class="dropdown-item redmenu" href="#">Contact us</a>
-									<a class="dropdown-item redmenu" href="#">Donate</a>
-									<a class="dropdown-item redmenu" href="#">Fundraise</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!------------------- end NAVIGATION ------------------->
-	
-	<!------------------- BANNER ------------------->
-	<div class="container-fluid" id="bg_banner">
-		<div class="container" id="banner">
-			<div class="row banner_home">
-				<div class="col-xl-12 banner_img">
-					<img src="img/Banner-home.jpg" alt="Banner home">
-				</div>
-			</div>
-			
-			<div class="row pagi_home justify-content-center">
-				<div class="col-xl-4 pagi_button">Pagination</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- end BANNER ------------------->
-	
-	<!------------------- SEARCH PETS ------------------->
-	<div class="container" id="search_pets">
-		<div class="row">
-			<div class="offset-xl-2 col-xl-8">
-				<h1>Find your <span class="redtext">littlepaws</span><br>
-					new best friends here!</h1>
-				<p>Browse pets from our network of over 8,888 adoptable pets from rescue groups, shelters, and pounds across the nation!</p>
-			</div>
-			<div class="offset-xl-1 col-xl-10">Search bar</div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6
-						col-sm-6
-						col-6 card_pets">
-				<div class="search_card">
-					<img src="img/Category 1. Dogs.jpg" alt="Dogs">
-					<a href="#">Adopt Dogs <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-				</div>
-			</div>
-			
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6
-						col-sm-6
-						col-6 card_pets">
-				<div class="search_card">
-					<img src="img/Category 2. Cats.jpg" alt="Dogs">
-					<a href="#">Adopt Cats <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-				</div>
-			</div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6
-						col-sm-6
-						col-6 card_pets">
-				<div class="search_card">
-					<img src="img/Category 3.Rehoming.jpg" alt="Dogs">
-					<a href="#">Assisted Rehoming <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-				</div>
-			</div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6
-						col-sm-6
-						col-6 card_pets">
-				<div class="search_card">
-					<img src="img/Category 4.Programs.jpg" alt="Dogs">
-					<a href="#">Our Programs <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- end SEARCH PETS ------------------->
-	
-	<!------------------- ABOUT US ------------------->
-	<div class="container" id="bg_aboutus">
-		<div class="row">
-			<div class="offset-xl-2 col-xl-8 home_cont">
-				<h4>ABOUT US</h4>
-				<h1>We are <span class="redtext">littlepaws</span></h1>
-				<h4>littlepaws Pet Foundation is a national animal welfare organization dedicated to ending pet homelessness.</h4>
-				<p>For almost one decade, littlepaws PF. has helped in creating true social change by bringing pet adoption into the mainstream. Our work has helped make a difference to the Vietnamese rescue community and thousands of pets in need of rescue and rehabilitation. But, until every pet is safe, respected, and loved, we all still have big, hairy work to do. Find out more about our mission to help save over 10,000 healthy and rehomable pets each year.</p>
-				<a href=""><div class="button_yellow">FIND OUT MORE ABOUT US</div></a>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-xl-6
-						col-lg-7
-						col-md-7 order-md-1
-						col-sm-12
-						col-12 order-2 cont_a">
-				<div class="title_aboutus">
-					<img class="icon_60px" src="img/1.1.icon-Heart.png" alt="Icon">
-					<h4 class="title_h4">9 years of impact,<br>
-						<span class="redtext">88,888 lives</span> touched and counting!</h4>
-				</div>
-				<p>littlepaws PF. supports programs and initiatives focused on addressing the pet overpopulation crisis in all 63 provinces/cities. Through donation and fundrasing for pet adoption, spay &amp; neuter, microchipping and emergencies we are making a difference to reduce the number of pets in shelters and rescues.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			<div class="offset-xl-1 col-xl-5
-						col-lg-5
-						col-md-5 order-md-2
-						col-sm-12
-						offset-0 col-12 order-1 img_aboutus">
-				<img src="img/About us 1. Girl A.jpg" alt="Girl A">
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-xl-5
-						col-lg-5
-						col-md-5
-						col-sm-12
-						col-12 img_aboutus">
-				<img src="img/About us 2. Girl B.jpg" alt="Girl B">
-			</div>
-			<div class="offset-xl-1 col-xl-6
-						col-lg-7
-						col-md-7
-						col-sm-12
-						offset-0 col-12 cont_b">
-				<img class="icon_60px" src="img/1.1.icon-Heart.png" alt="Icon"><h4><span class="redtext">1.2 billion Vietnamese Dong</span> in food<br>
-					and product donations</h4>
-				<p>littlepaws PF. supports programs and initiatives focused on addressing the pet overpopulation crisis in all 63 provinces/cities. Through donation and fundrasing for pet adoption, spay &amp; neuter, microchipping and emergencies we are making a difference to reduce the number of pets in shelters and rescues.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-		</div>
-	</div>
-	<!------------------- end ABOUT US ------------------->
-	
-	<!------------------- FEATURED PETS ------------------->
-	<div class="container" id="bg_featured">
-		<div class="row">
-			<div class="offset-xl-2 col-xl-8 home_cont">
-				<h4>FEATURED PETS TO ADOPT</h4>
-				<h1>Featured <span class="redtext">littlepaws</span>’s pets available for adoption</h1>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-xl-8
-						col-lg-8
-						col-md-8
-						col-sm-8
-						col-8">Dogs available for adoption</div>
-			<div class="col-xl-4
-						col-lg-4
-						col-md-4
-						col-sm-4
-						col-4"><a href="">View all dogs <i class="fa-solid fa-chevron-right fa-sm"></i></a></div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4
-						col-sm-6
-						col-6 card_pet">
-				<img src="img/10.jpg">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4
-						col-sm-6
-						col-6 card_pet">
-				<img src="img/10.jpg">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4 d-md-block
-						col-sm-6
-						col-6 d-none card_pet">
-				<img src="img/10.jpg">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			<div class="col-xl-3
-						col-lg-3 d-lg-block
-						col-md-4
-						col-sm-6
-						col-6 d-none card_pet">
-				<img src="img/10.jpg">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-xl-8
-						col-lg-8
-						col-md-8
-						col-sm-8
-						col-8">Cats available for adoption</div>
-			<div class="col-xl-4
-						col-lg-4
-						col-md-4
-						col-sm-4
-						col-4"><a href="">View all cats <i class="fa-solid fa-chevron-right fa-sm"></i></a></div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4
-						col-sm-6
-						col-6 card_pet">
-				<img src="img/7.webp">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4
-						col-sm-6
-						col-6 card_pet">
-				<img src="img/7.webp">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			<div class="col-xl-3
-						col-lg-3
-						col-md-4 d-md-block
-						col-sm-6
-						col-6 d-none card_pet">
-				<img src="img/7.webp">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-			<div class="col-xl-3
-						col-lg-3 d-lg-block
-						col-md-4
-						col-sm-6
-						col-6 d-none card_pet">
-				<img src="img/7.webp">
-				<h4>Name <i class="fa-regular fa-heart fa-sm"></i></h4>
-				<p>Status: Adoptable</p>
-				<p>Age: 2 years<br>
-					Breed: Pembroke Corgi - Red/White<br>
-					Size: Medium (15 kg)</p>
-				<p>Foster: Ho Chi Minh City</p>
-			</div>
-		</div>
-	</div><!------------------- end FEATURED PETS ------------------->
-	
-	<!------------------- OUR PROGRAMS ------------------->
-	<div class="container" id="bg_programs">
-		<!-- Category Title -->
-		<div class="row">
-			<div class="col-xl-7
-						col-lg-8
-						col-md-12
-						col-sm-12
-						col-12 home_cont2">
-				<h4>OUR PROGRAMS</h4>
-				<h1>We <span class="redtext">littlepaws</span> is here to help with our best staffs</h1>
-				<p>Every day, shelters and rescues across Vietnam work tirelessly to address the pet overpopulation crisis. littlepaws PF. is here to help. We offer a variety of programs and grant assistance to help animal welfare organizations change the outlook for the pets of their communities.</p>
-			</div>
-			<div class="offset-xl-1 col-xl-4
-						col-lg-4
-						col-md-12
-						col-sm-12
-						offset-0 col-12 img_aboutus">Img</div>
-		</div>
-		
-		<div class="row">
-			<!-- Sitting -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Sitting</h4>
-				<p>littlepaws Pet Foundation's facility in Ho Chi Minh City, Vietnam provides shelters and fosters for many of our dogs and cats. In addition to a roof over their heads, we pay for heat, food, water, electricity, and general maintenance.</p>
-				<p>While most of the work is done by dedicated volunteers, we have a small kennel staff to help care for the pets.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Grooming -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Grooming</h4>
-				<p>It is an important aspect of a pet’s overall well-being and health. Pet grooming is important for the whole family as well.</p>
-				<p>With proper dogs and cats grooming, you will get rid of shedding, fleas, ticks, and various health conditions. It will also allow you to identify any underlying conditions or diseases early. Therefore, you will be able to take your pets for treatment sooner and more efficiently.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Vetting -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Vetting</h4>
-				<p>Our clinic provides vet care to our dogs and cats. General health assessments, medications, vaccinations, blood work, testing and other necessary surgeries are all a part of the day- to-day routine.</p>
-				<p>Additionally, we pay for specialist care, as needed, to maintain the health of our pets.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Spay and Neuter -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Spay &amp; Neuter</h4>
-				<p>Every year, millions of unwanted dogs and cats are euthanized. By having your dog or cat sterilized, you will do your part to prevent the birth of unwanted puppies and kittens.</p>
-				<p>Spaying and neutering prevent unwanted litters, help protect against some serious health problems, and may reduce many of the behavioral problems associated with the mating instinct.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Training -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Training</h4>
-				<p>Training your pets - whether you just got a puppy/kitten or want to teach an old pet new tricks - can be a rewarding experience for both you and your pet.</p>
-				<p>Training the pets not only keeps them safer in unpredictable situations, it’s also an excellent way to strengthen your bond and deepen your relationship.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Cremation -->
-			<div class="col-xl-4
-						col-lg-4
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Cremation</h4>
-				<p>We believe your treasured pets are important part of the family and should be honoured when they pass away. We offer affordable pet cremation services that are suitable for dogs, cats at our on-site crematorium.</p>
-				<p>All pets are handled with care and compassion and we guarantee all of your pet’s ashes are returned in either a scatter box or pet urn.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Accordion -->
-			<div class="col-xl-12 d-md-none">
-				<div class="accordion" id="accordion_programs">
-					<div class="card">
-						<!-- Sitting -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
-							<span class="heading4">Sitting</span>
-						</div>
+  <!------------------- NAVIGATION ------------------->
+  <div class="container-fluid" id="bg_navi">
+    <div class="container" id="navi">
+      <div class="row">
+        <!-- Header -->
+        <div class="col-xl-12 col-lg-12 col-md-12 d-md-block d-none">
+          <div class="navi_header">
+            <!-- Left Header -->
+            <ul class="header_left">
+              <li><a href="contactus.html" class="txtred font_label">Contact us</a></li>
+              <li><a href="donate.html" class="txtred font_label">Donate</a></li>
+              <li><a href="fundraise.html" class="txtred font_label">Fundraise</a></li>
+            </ul>
 
-						<div id="collapse1" class="card-body collapse" data-parent="#accordion_programs">
-							<p>littlepaws Pet Foundation's facility in Ho Chi Minh City, Vietnam provides shelters and fosters for many of our dogs and cats. In addition to a roof over their heads, we pay for heat, food, water, electricity, and general maintenance.</p>
-							<p>While most of the work is done by dedicated volunteers, we have a small kennel staff to help care for the pets.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+            <!-- Right Header -->
+            <ul class="header_right">
+              <li>
+                <a href="#" class="txtred font_label"><i class="fa-regular fa-magnifying-glass"></i></a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="txtred font_label"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="user.html" class="txtred font_label"><i class="fa-regular fa-circle-user"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btnyellow"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+              </li>
+              <li>
+                <a href="#" class="btnred"><i class="fa-solid fa-user-plus"></i> Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end | Header -->
 
-						<!-- Grooming -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-							<span class="heading4">Grooming</span>
-						</div>
+        <!-- Header mobile -->
+        <div class="d-md-none col-sm-12 col-12">
+          <div class="navi_header">
+            <!-- Left Header -->
+            <ul class="header_left">
+              <li>
+                <a href="#" class="btnyellow"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+              </li>
+              <li>
+                <a href="#" class="btnred"><i class="fa-solid fa-user-plus"></i> Register</a>
+              </li>
+            </ul>
 
-						<div id="collapse2" class="card-body collapse" data-parent="#accordion_programs">
-							<p>It is an important aspect of a pet’s overall well-being and health. Pet grooming is important for the whole family as well.</p>
-							<p>With proper dogs and cats grooming, you will get rid of shedding, fleas, ticks, and various health conditions. It will also allow you to identify any underlying conditions or diseases early. Therefore, you will be able to take your pets for treatment sooner and more efficiently.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+            <!-- Right Header -->
+            <ul class="header_right">
+              <li>
+                <a href="#" class="txtred font_label"><i class="fa-regular fa-magnifying-glass"></i></a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="txtred font_label"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="user.html" class="txtred font_label"><i class="fa-regular fa-circle-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end | Header mobile -->
 
-						<!-- Vetting -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-							<span class="heading4">Vetting</span>
-						</div>
+        <!-- hr -->
+        <hr class="navi_hr" />
+        <!-- end | hr -->
 
-						<div id="collapse3" class="card-body collapse" data-parent="#accordion_programs">
-							<p>Our clinic provides vet care to our dogs and cats. General health assessments, medications, vaccinations, blood work, testing and other necessary surgeries are all a part of the day- to-day routine.</p>
-							<p>Additionally, we pay for specialist care, as needed, to maintain the health of our pets.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+        <!-- Logo header -->
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 logo_header">
+          <a href="home.html"><img src="img/Logo-40px.svg" alt="The littlepaws's Logo" /></a>
+        </div>
+        <!-- end | Logo header -->
 
-						<!-- Spay and Neuter -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
-							<span class="heading4">Spay &amp; Neuter</span>
-						</div>
+        <!-- Navi bar -->
+        <div class="col-xl-9 col-lg-9 col-md-12 d-md-block d-none navi_bar">
+          <ul class="nav justify-content-between">
+            <!-- About us -->
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link">ABOUT US</a>
+            </li>
+            <!-- end | About us -->
 
-						<div id="collapse4" class="card-body collapse" data-parent="#accordion_programs">
-							<p>Every year, millions of unwanted dogs and cats are euthanized. By having your dog or cat sterilized, you will do your part to prevent the birth of unwanted puppies and kittens.</p>
-							<p>Spaying and neutering prevent unwanted litters, help protect against some serious health problems, and may reduce many of the behavioral problems associated with the mating instinct.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+            <!-- Dogs -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DOGS</a>
+              <div class="dropdown-menu">
+                <a href="viewall_dogs.html" class="dropdown-item">View all dogs</a>
+                <a href="viewall_seniordogs.html" class="dropdown-item">Senior dogs</a>
+                <a href="viewall_bondeddogs.html" class="dropdown-item">Bonded pets</a>
+                <a href="viewall_fosterdogs.html" class="dropdown-item">Dogs looking for foster care</a>
+                <div class="dropdown-divider"></div>
+                <a href="adoption_faqs.html" class="dropdown-item">Thinking about Adoption: FAQs</a>
+              </div>
+            </li>
+            <!-- end | Dogs -->
 
-						<!-- Training -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
-							<span class="heading4">Training</span>
-						</div>
+            <!-- Cats -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CATS</a>
+              <div class="dropdown-menu">
+                <a href="viewall_cats.html" class="dropdown-item">View all cats</a>
+                <a href="viewall_seniorcats.html" class="dropdown-item">Senior cats</a>
+                <a href="viewall_bondedcats.html" class="dropdown-item">Bonded pets</a>
+                <a href="viewall_fostercats.html" class="dropdown-item">Cats looking for foster care</a>
+                <div class="dropdown-divider"></div>
+                <a href="adoption_faqs.html" class="dropdown-item">Thinking about Adoption: FAQs</a>
+              </div>
+            </li>
+            <!-- end | Cats -->
 
-						<div id="collapse5" class="card-body collapse" data-parent="#accordion_programs">
-							<p>Training your pets - whether you just got a puppy/kitten or want to teach an old pet new tricks - can be a rewarding experience for both you and your pet.</p>
-							<p>Training the pets not only keeps them safer in unpredictable situations, it’s also an excellent way to strengthen your bond and deepen your relationship.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+            <!-- Assisted Rehoming -->
+            <li class="nav-item">
+              <a href="assistedrehoming.html" class="nav-link">ASSISTED REHOMING</a>
+            </li>
+            <!-- end | Assisted Rehoming -->
 
-						<!-- Cremation -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
-							<span class="heading4">Cremation</span>
-						</div>
+            <!-- Our programs -->
+            <li class="nav-item">
+              <a href="programs.html" class="nav-link">OUR PROGRAMS</a>
+            </li>
+            <!-- end | Our programs -->
 
-						<div id="collapse6" class="card-body collapse" data-parent="#accordion_programs">
-							<p>We believe your treasured pets are important part of the family and should be honoured when they pass away. We offer affordable pet cremation services that are suitable for dogs, cats at our on-site crematorium.</p>
-							<p>All pets are handled with care and compassion and we guarantee all of your pet’s ashes are returned in either a scatter box or pet urn.</p>
-							<a href="">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!------------------- end OUR PROGRAMS ------------------->
-	
-	<!------------------- ASSISTED REHOMING ------------------->
-	<div class="container-fluid" id="bg_rehoming">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 home_cont2">
-					<h4>ASSISTED REHOMING</h4>
-					<h1>Do you want we littlepaws to rehome your beloved pet?</h1>
-					<p>There are many different situations that can lead to you needing to rehome your beloved pet.</p>
-					<p>Our program AssistedRehoming can help you find the best new home for your pet while they stay safe and stress-free in your home, but if we can, we’d love to help you and your pet stay together.</p>
-					<p>Below, you’ll find some great advice and resources. These have been gathered based on the most common enquiries received by the littlepaws PF. help desk to help you make the best decision for your pet.</p>
-					<a href=""><div class="button_yellow">READ MORE</div></a>
-				</div>
-				<div class="offset-xl-1 col-xl-5 img_aboutus">Img</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- end ASSISTED REHOMING ------------------->
-	
-	<!------------------- VOLUNTEERS ------------------->
-	<div class="container" id="bg_volunteers">
-		<div class="row">
-			<div class="offset-xl-2 col-xl-8 home_cont">
-				<h4>VOLUNTEERS</h4>
-				<h1>We <span class="redtext">littlepaws</span> truly appreciate your interest in helping!</h1>
-				<p>littlepaws PF. relies on volunteers to help our dogs and cats in many ways – either directly (fostering, socializing, feeding, ...) or through the day-to-day activities that are necessary for running an organization. Without these dedicated individuals, we would not be able to accomplish all that we do.</p>
-				<a href=""><div class="button_red">JOIN US NOW</div></a>
-			</div>
-		</div>	
-		
-		<div class="row">
-			<!-- Opportunities -->
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Opportunities</h4>
-				<p>From feeding puppies and kittens at the littlepaws PF. to making donor thank you calls from your home, we have volunteer positions for anyone who wants to make a difference.</p>
-				<p>Check out the many opportunities and get involved today!</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Become a Foster -->
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Become a Foster</h4>
-				<p>To help provide a safe space for pets to begin their new, happy lives. We littlepaws PF. would not exist without foster homes.</p>
-				<p>As foster parents to the dogs and cats of our facility, you provide the love and stability they need. We thank you for that!</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Donate -->
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Donate</h4>
-				<p>We littlepaws PF. has worked tirelessly to put an end to animal abuse and neglect.</p>
-				<p>We are a national leader in animal rescue, protection and placement, and your donation will help fight cruelty and make a life-changing difference for pets.</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Fundraise -->
-			<div class="col-xl-3
-						col-lg-3
-						col-md-6 d-md-flex
-						d-none cont_a2">
-				<h4 class="title_bordertop">Fundraise</h4>
-				<p>Don't be disheartened about the recurring expenses and being unable to provide the basic needs of these loving animals and pets.</p>
-				<p>Instead, start an Animal Crowdfunding Campaign with us littlepaws PF. today!</p>
-				<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			
-			<!-- Accordion -->
-			<div class="col-xl-12 d-md-none">
-				<div class="accordion" id="accordion_volunteers">
-					<div class="card">
-						<!-- Opportunities -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapsev1">
-							<span class="heading4">Opportunities</span>
-						</div>
+            <!-- Blogs -->
+            <li class="nav-item"><a href="blogs.html" class="nav-link">BLOGS</a></li>
+            <!-- end | Blogs -->
+          </ul>
+        </div>
+        <!-- end | Navi bar -->
 
-						<div id="collapsev1" class="card-body collapse" data-parent="#accordion_volunteers">
-							<p>From feeding puppies and kittens at the littlepaws PF. to making donor thank you calls from your home, we have volunteer positions for anyone who wants to make a difference.</p>
-							<p>Check out the many opportunities and get involved today!</p>
-							<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+        <!-- Navi menu mobile -->
+        <div class="d-md-none col-sm-6 col-6 navi_menu">
+          <a href="#"><i class="fa-solid fa-bars" id="icon_menu"></i></a>
+        </div>
+        <!-- end | Navi menu mobile -->
+      </div>
+    </div>
+    <!------------------- end container | NAVIGATION ------------------->
+  </div><!------------------- end container-fluid | NAVIGATION ------------------->
 
-						<!-- Become a Foster -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapsev2">
-							<span class="heading4">Become a Foster</span>
-						</div>
+  <!------------------- MENU MOBILE ------------------->
+  <div class="container-fluid" id="bg_menu_mobile">
+    <div class="container">
+      <div class="row">
+        <!-- Accordion -->
+        <div class="col-xl-12 accordion" id="accordEx">
+          <!-- Menu mobile -->
+          <ul class="nav" id="nav_menu_mobile">
+            <!-- About us -->
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link font_sub">ABOUT US</a>
+            </li>
 
-						<div id="collapsev2" class="card-body collapse" data-parent="#accordion_volunteers">
-							<p>To help provide a safe space for pets to begin their new, happy lives. We littlepaws PF. would not exist without foster homes.</p>
-							<p>As foster parents to the dogs and cats of our facility, you provide the love and stability they need. We thank you for that!</p>
-							<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+            <!-- Dogs -->
+            <!-- button -->
+            <li class="nav-item collapsed" id="mobileheading_dogs" data-toggle="collapse"
+              data-target="#mobilecollapse_dogs" aria-expanded="false" aria-controls="mobilecollapse_dogs">
+              <a href="#" class="nav-link flex_menu2 font_sub">
+                <span>DOGS</span>
+                <i class="fa-solid fa-chevron-down fa_icon"></i>
+              </a>
+            </li><!-- end button -->
 
-						<!-- Donate -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapsev3">
-							<span class="heading4">Donate</span>
-						</div>
+            <!-- content -->
+            <div id="mobilecollapse_dogs" class="collapse" data-parent="#nav_menu_mobile"
+              aria-labelledby="mobileheading_dogs">
+              <ul class="nav" id="collapse_menu_mobile">
+                <li class="nav-item">
+                  <a href="viewall_dogs" class="nav-link">View all dogs</a>
+                </li>
 
-						<div id="collapsev3" class="card-body collapse" data-parent="#accordion_volunteers">
-							<p>We littlepaws PF. has worked tirelessly to put an end to animal abuse and neglect.</p>
-							<p>We are a national leader in animal rescue, protection and placement, and your donation will help fight cruelty and make a life-changing difference for pets.</p>
-							<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
+                <li class="nav-item">
+                  <a href="viewall_seniordogs.html" class="nav-link">Senior dogs</a>
+                </li>
 
-						<!-- Fundraise -->
-						<div class="card-header collapsed" data-toggle="collapse" href="#collapsev4">
-							<span class="heading4">Fundraise</span>
-						</div>
+                <li class="nav-item">
+                  <a href="viewall_bondeddogs.html" class="nav-link">Bonded dogs</a>
+                </li>
 
-						<div id="collapsev4" class="card-body collapse" data-parent="#accordion_volunteers">
-							<p>Don't be disheartened about the recurring expenses and being unable to provide the basic needs of these loving animals and pets.</p>
-							<p>Instead, start an Animal Crowdfunding Campaign with us littlepaws PF. today!</p>
-							<a href="" class="readmore_btn">Read more <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-xl-12 img_volunteers">Img</div>
-		</div>
-	</div><!------------------- end VOLUNTEERS ------------------->
-	
-	<!------------------- SUBSCRIBE ------------------->
-	<div class="container" id="bg_subscribe">
-		<div class="row">
-			<div class="col-xl-6 home_cont2">
-				<h4>SUBSCRIBE AND STAY CONNECTED</h4>
-				<h1>Your <span class="redtext">happier</span> (and <span class="redtext">furrier</span>) inbox awaits!</h1>
-				<p>You will get a dose of happy adoption stories (we call them Happy Tails!), adorable pets looking for love, great advice for pet owners, tips to boost your search for a furry family member, updates on littlepaws PF.’s work to create a future where every pet is safe, respected and loved, and lots more.</p>
-				<p>We promise we won’t spam you, and we will keep your details top secret.</p>
-				<a href="">Check out our Privacy Policy <i class="fa-solid fa-chevron-right fa-sm"></i></a>
-			</div>
-			<div class="offset-xl-1 col-xl-5 img_aboutus">Form - Input Name and Email</div>
-		</div>
-	</div>
-	<!------------------- end SUBSCRIBE ------------------->
-	
-	<!------------------- PARTNERS ------------------->
-	<div class="container" id="bg_partners">
-		<div class="row">
-			<div class="offset-xl-2 col-xl-8 home_cont">
-				<h4>OUR PARTNERS</h4>
-				<h1>We <span class="redtext">littlepaws</span> value our generous Sponsors &amp; Partners</h1>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-			
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-			
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-			
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-			
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-			
-			<div class="col-xl-2">
-				<div class="img_volunteers">Img 1</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- end PARTNERS ------------------->
-	
-	<!------------------- FOOTER ------------------->
-	<div class="container-fluid" id="bg_footer">
-		<div class="container">
-			<div class="row">
-				<!-- Logo and Information -->
-				<div class="col-xl-3">
-					<!-- Logo -->
-					<div class="footer_logo">
-						<img src="img/Logo-40px-Footer.png" alt="littlepaws's Logo">
-					</div>
-					
-					<!-- Information -->
-					<div class="footer_cont">
-						<div class="label">littlepaws Pet Foundation™</div>
-						<p class="font_smalltext">Monday to Saturday from 8:00 AM to 6:00 PM GMT+7 (Vietnam)</p>
-						
-						<div class="font_smalltext address_cont">
-							<p><i class="fa fa-sharp fa-solid fa-location-dot fa-sm"></i> Address: GIC Tower, 275 Nguyen Van Dau, Ward 11, Binh Thanh District, Ho Chi Minh City, Vietnam<br>
-								<i class="fa fa-sharp fa-solid fa-mailbox fa-sm"></i> Email: contactus@littlepaws.vn<br>
-								<i class="fa fa-solid fa-phone fa-sm"></i> Contact: (+84)888 088 765</p>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Links -->
-				<div class="col-xl-9
-							col-lg-12
-							col-md-12 d-md-block
-							d-none">
-					<div class="row">
-						<!-- About us -->
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">ABOUT US</div>
-							<ul class="font_smalltext">
-								<li><a href="#">Our story</a></li>
-								<li><a href="#">Our mission &amp; vision</a></li>
-								<li><a href="#">Our team</a></li>
-								<li><a href="#">Partners, sponsors &amp; supporters</a></li>
-								<li><a href="#">Career</a></li>
-							</ul>
-						</div>
-						
-						<!-- Copies -->
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">OUR PROGRAMS</div>
-							<ul class="font_smalltext">
-								<li><a href="#">Sitting</a></li>
-								<li><a href="#">Grooming</a></li>
-								<li><a href="#">Vetting</a></li>
-								<li><a href="#">Spay &amp; neuter</a></li>
-								<li><a href="#">Training</a></li>
-								<li><a href="#">Cremation</a></li>
-							</ul>
-						</div>
-						
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">ASSISTED REHOMING</div>
-							<ul class="font_smalltext">
-								<li><a href="#">What is AssistedRehoming™ Program?</a></li>
-								<li><a href="#">Options for urgent support</a></li>
-								<li><a href="#">Help to keep your pet</a></li>
-								<li><a href="#">AssistedRehoming™ Program for vets, shelters &amp; pounds</a></li>
-								<li><a href="#">FAQs</a></li>
-							</ul>
-						</div>
-						
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">ADOPT DOGS &amp; CATS</div>
-							<ul class="font_smalltext">
-								<li><a href="#">Search pets</a></li>
-								<li><a href="#">Thinking about Adoption: FAQs</a></li>
-								<li><a href="#">Assisted Rehoming</a></li>
-								<li><a href="#">Looking for Foster care</a></li>
-							</ul>
-						</div>
-						
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">VOLUNTEER</div>
-							<ul class="font_smalltext">
-								<li><a href="#">Volunteer opportunities</a></li>
-								<li><a href="#">Become a foster</a></li>
-								<li><a href="#">Donate</a></li>
-								<li><a href="#">Fundraise</a></li>
-							</ul>
-						</div>
-						
-						<div class="col-xl-4
-									col-lg-4
-									col-md-4">
-							<div class="font_label">QUICK LINKS</div>
-							<ul class="font_smalltext">
-								<li><a href="#">Log in</a></li>
-								<li><a href="#">Sign up as an adopter</a></li>
-								<li><a href="#">Sign up as a rescue group</a></li>
-								<li><a href="#">Help</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Mobile -->
-				<div class="d-md-none
-							col-sm-12
-							col-12 d-block">
-					
-					<!-- About us -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer1"
-							aria-expanded="false"
-							aria-controls="footer1">
-						<div class="font_label">ABOUT US</div>
-					</button>
-					
-					<div id="footer1" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">Our story</a></li>
-							<li><a href="#">Our mission &amp; vision</a></li>
-							<li><a href="#">Our team</a></li>
-							<li><a href="#">Partners, sponsors &amp; supporters</a></li>
-							<li><a href="#">Career</a></li>
-						</ul>
-					</div>
-					
-					<!-- Our programs -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer2"
-							aria-expanded="false"
-							aria-controls="footer2">
-						<div class="font_label">OUR PROGRAMS</div>
-					</button>
-					
-					<div id="footer2" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">Sitting</a></li>
-							<li><a href="#">Grooming</a></li>
-							<li><a href="#">Vetting</a></li>
-							<li><a href="#">Spay &amp; neuter</a></li>
-							<li><a href="#">Training</a></li>
-							<li><a href="#">Cremation</a></li>
-						</ul>
-					</div>
-					
-					<!-- Assisted Rehoming -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer3"
-							aria-expanded="false"
-							aria-controls="footer3">
-						<div class="font_label">ASSISTED REHOMING</div>
-					</button>
-					
-					<div id="footer3" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">What is AssistedRehoming™ Program?</a></li>
-							<li><a href="#">Options for urgent support</a></li>
-							<li><a href="#">Help to keep your pet</a></li>
-							<li><a href="#">AssistedRehoming™ Program for vets, shelters &amp; pounds</a></li>
-							<li><a href="#">FAQs</a></li>
-						</ul>
-					</div>
-					
-					<!-- Adopt dogs and cats -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer4"
-							aria-expanded="false"
-							aria-controls="footer4">
-						<div class="font_label">ADOPT DOGS &amp; CATS</div>
-					</button>
-					
-					<div id="footer4" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">Search pets</a></li>
-							<li><a href="#">Thinking about Adoption: FAQs</a></li>
-							<li><a href="#">Assisted Rehoming</a></li>
-							<li><a href="#">Looking for Foster care</a></li>
-						</ul>
-					</div>
-					
-					<!-- Volunteer -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer5"
-							aria-expanded="false"
-							aria-controls="footer5">
-						<div class="font_label">VOLUNTEER</div>
-					</button>
-					
-					<div id="footer5" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">Volunteer opportunities</a></li>
-							<li><a href="#">Become a foster</a></li>
-							<li><a href="#">Donate</a></li>
-							<li><a href="#">Fundraise</a></li>
-						</ul>
-					</div>
-					
-					<!-- Quick links -->
-					<button class="btn btn-block text-left btn_footer collapsed"
-							data-toggle="collapse"
-							data-target="#footer6"
-							aria-expanded="false"
-							aria-controls="footer6">
-						<div class="font_label">QUICK LINKS</div>
-					</button>
-					
-					<div id="footer6" class="collapse">
-						<ul class="font_smalltext">
-							<li><a href="#">Log in</a></li>
-							<li><a href="#">Sign up as an adopter</a></li>
-							<li><a href="#">Sign up as a rescue group</a></li>
-							<li><a href="#">Help</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="container-fluid" id="bg_copyright">COPYRIGHT © littlepaws PET FOUNDATION™ 2023 Terms of Service &amp; Privacy Policy</div>
-	<!------------------- end FOOTER ------------------->
+                <li class="nav-item">
+                  <a href="viewall_fosterdogs.html" class="nav-link">Dogs looking for foster care</a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item">
+                  <a href="adoption_faqs.html" class="nav-link">Thinking about Adoption: FAQs</a>
+                </li>
+              </ul>
+            </div><!-- end content -->
+
+            <!-- Cats -->
+            <!-- button -->
+            <li class="nav-item collapsed" id="mobileheading_cats" data-toggle="collapse"
+              data-target="#mobilecollapse_cats" aria-expanded="false" aria-controls="mobilecollapse_cats">
+              <a href="#" class="nav-link flex_menu2 font_sub">
+                <span>CATS</span>
+                <i class="fa-solid fa-chevron-down fa_icon"></i>
+              </a>
+            </li><!-- end button -->
+
+            <!-- content -->
+            <div id="mobilecollapse_cats" class="collapse" data-parent="#nav_menu_mobile"
+              aria-labelledby="mobileheading_cats">
+              <ul class="nav" id="collapse_menu_mobile">
+                <li class="nav-item">
+                  <a href="viewall_cats.html" class="nav-link">View all cats</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="viewall_seniorcats.html" class="nav-link">Senior cats</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="viewall_bondedcats.html" class="nav-link">Bonded cats</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="viewall_fostercats.html" class="nav-link">Cats looking for foster care</a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item">
+                  <a href="adoption_faqs.html" class="nav-link">Thinking about Adoption: FAQs</a>
+                </li>
+              </ul>
+            </div><!-- end content -->
+
+            <!-- Assisted Rehoming -->
+            <!-- button -->
+            <li class="nav-item collapsed" id="mobileheading_ass" data-toggle="collapse"
+              data-target="#mobilecollapse_ass" aria-expanded="false" aria-controls="mobilecollapse_ass">
+              <a href="#" class="nav-link flex_menu2 font_sub">
+                <span>ASSISTED REHOMING</span>
+                <i class="fa-solid fa-chevron-down fa_icon"></i>
+              </a>
+            </li><!-- end button -->
+
+            <!-- content -->
+            <div id="mobilecollapse_ass" class="collapse" data-parent="#nav_menu_mobile"
+              aria-labelledby="mobileheading_ass">
+              <ul class="nav" id="collapse_menu_mobile">
+                <li class="nav-item">
+                  <a href="assistedrehoming_whatis.html" class="nav-link">What is AssistedRehoming™ Program?</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="assistedrehoming_urgentsupport.html" class="nav-link">Options for urgent support</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="assistedrehoming_help.html" class="nav-link">Help to keep your pet</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="assistedrehoming_programs.html" class="nav-link">AssistedRehoming™ Program for vets, shelters
+                    &amp; pounds</a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="nav-item">
+                  <a href="assistedrehoming_faqs.html" class="nav-link">FAQs</a>
+                </li>
+              </ul>
+            </div><!-- end content -->
+
+            <!-- Our Programs -->
+            <!-- button -->
+            <li class="nav-item collapsed" id="mobileheading_programs" data-toggle="collapse"
+              data-target="#mobilecollapse_programs" aria-expanded="false" aria-controls="mobilecollapse_programs">
+              <a href="#" class="nav-link flex_menu2 font_sub">
+                <span>OUR PROGRAMS</span>
+                <i class="fa-solid fa-chevron-down fa_icon"></i>
+              </a>
+            </li><!-- end button -->
+
+            <!-- content -->
+            <div id="mobilecollapse_programs" class="collapse" data-parent="#nav_menu_mobile"
+              aria-labelledby="mobileheading_programs">
+              <ul class="nav" id="collapse_menu_mobile">
+                <li class="nav-item">
+                  <a href="programs_sitting.html" class="nav-link">Sitting</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="programs_grooming.html" class="nav-link">Grooming</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="programs_vetting.html" class="nav-link">Vetting</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="programs_spayneuter.html" class="nav-link">Spay &amp; neuter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="programs_training.html" class="nav-link">Training</a>
+                </li>
+                <li class="nav-item">
+                  <a href="programs_cremation.html" class="nav-link">Cremation</a>
+                </li>
+              </ul>
+            </div><!-- end content -->
+
+            <!-- Blogs -->
+            <li class="nav-item">
+              <a href="blogs.html" class="nav-link font_sub">BLOGS</a>
+            </li>
+          </ul><!-- end | Menu mobile -->
+        </div><!-- end | Accordion -->
+      </div>
+    </div>
+
+    <!-- Sub menu -->
+    <ul class="nav" id="sub_menu">
+      <li class="nav-item">
+        <a href="contactus.html" class="nav-link">Contact us</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="donate.html" class="nav-link">Donate</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="fundraise.html" class="nav-link">Fundraise</a>
+      </li>
+    </ul><!-- end | Sub menu -->
+  </div><!------------------- end container-fluid | MENU MOBILE ------------------->
+
+  <!-- Menu overlay -->
+  <div id="bg_overlay"></div><!-- end | Menu overlay -->
+
+  <!------------------- BANNER ------------------->
+  <div class="container-fluid" id="bg_banner">
+    <div class="container" id="banner">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 banner_home">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- end | Indicators -->
+
+            <!-- Carousel Banner -->
+            <div class="carousel-inner">
+              <!-- Banner 1 -->
+              <div class="carousel-item active">
+                <img class="d-block" src="img/Banner-home.jpg" alt="Banner 1" />
+                <div class="carousel-caption d-none d-md-block text-dark">
+                  <h4>1</h4>
+                  <p>
+                    The littlepaws Pet Foundation and PetRescue - working
+                    together to make the world a better place for pets!
+                  </p>
+                </div>
+              </div>
+              <!-- end | Banner 1 -->
+
+              <!-- Banner 2 -->
+              <div class="carousel-item">
+                <img class="d-block" src="img/Banner-home.jpg" alt="Banner 2" />
+                <div class="carousel-caption d-none d-md-block text-dark">
+                  <h4>2</h4>
+                  <p>
+                    The littlepaws Pet Foundation and PetRescue - working
+                    together to make the world a better place for pets!
+                  </p>
+                </div>
+              </div>
+              <!-- end | Banner 2 -->
+
+              <!-- Banner 3 -->
+              <div class="carousel-item">
+                <img class="d-block" src="img/Banner-home.jpg" alt="Banner 3" />
+                <div class="carousel-caption d-none d-md-block text-dark">
+                  <h4>3</h4>
+                  <p>
+                    The littlepaws Pet Foundation and PetRescue - working
+                    together to make the world a better place for pets!
+                  </p>
+                </div>
+              </div>
+              <!-- end | Banner 3 -->
+            </div>
+            <!-- end | Carousel Banner -->
+
+            <!-- Button: Prev/Next -->
+            <!-- Prev -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <div class="padding_button_prev">
+                <span class="fa-solid fa-chevron-left fa_carousel" aria-hidden="true"></span>
+              </div>
+              <span class="sr-only">Previous</span>
+            </a><!-- end ! Prev -->
+
+            <!-- Next -->
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <div class="padding_button_next">
+                <span class="fa-solid fa-chevron-right fa_carousel" aria-hidden="true"></span>
+              </div>
+              <span class="sr-only">Next</span>
+            </a><!-- end | Next -->
+          </div>
+          <!-- end | Carousel -->
+        </div>
+      </div>
+    </div>
+    <!------------------- end container | BANNER ------------------->
+  </div><!------------------- end container-fluid | BANNER ------------------->
+
+  <!------------------- SEARCH PETS ------------------->
+  <div class="container" id="search_pets">
+    <div class="row">
+      <!-- Title -->
+      <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-0 col-12">
+        <h1>
+          Find your <span class="txtred">littlepaws</span><br />
+          new best friends here!
+        </h1>
+        <p>
+          Browse pets from our network of over 8,888 adoptable pets from
+          rescue groups, shelters, and pounds across the nation!
+        </p>
+      </div><!-- end | Title -->
+
+      <!-- Search bar -->
+      <div class="offset-xl-1 col-xl-10
+      offset-lg-1 col-lg-10
+      offset-md-1 col-md-10">
+        <div class="search-container">
+          <form action="#">
+            <!-- Search pets name -->
+            <input type="search" placeholder="Search dog, cat, puppy, kitten, ..." name="searchpets" />
+
+            <i class="fa-solid fa-grip-lines-vertical fa_margin"></i>
+
+            <!-- Search location -->
+            <input type="search" placeholder="Find nearby shelter..." name="searchlocation" />
+
+            <!-- Button -->
+            <div class="btn_search_pets">
+              <a href="product.html">
+                <i class="fa-solid fa-search fa_searchpets"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div><!-- end | Search bar -->
+
+      <!-- Dogs -->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 card_pets">
+        <div class="search_card">
+          <img src="img/Category 1. Dogs.jpg" alt="Adopt DOGS &amp; PUPPIES" />
+          <a href="product_dogs.html" class="font_sub"><i class="fa-solid fa-dog"></i> Adopt DOGS &amp; PUPPIES</a>
+        </div>
+      </div>
+      <!-- end | Dogs -->
+
+      <!-- Cats -->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 card_pets">
+        <div class="search_card">
+          <img src="img/Category 2. Cats.jpg" alt="Adopt CATS &amp; KITTENS" />
+          <a href="product_cat.html" class="font_sub"><i class="fa-solid fa-cat"></i> Adopt CATS &amp; KITTENS</a>
+        </div>
+      </div>
+      <!-- end | Cats -->
+
+      <!-- Assisted rehoming -->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 card_pets">
+        <div class="search_card">
+          <img src="img/Category 3.Rehoming.jpg" alt="AssistedRehoming PROGRAM™" />
+          <a href="assistedrehoming.html" class="font_sub"><i class="fa-solid fa-house-building"></i> AssistedRehoming
+            PROGRAM™</a>
+        </div>
+      </div>
+      <!-- end | Assisted rehoming -->
+
+      <!-- Our programs -->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 card_pets">
+        <div class="search_card">
+          <img src="img/Category 4.Programs.jpg" alt="Our PROGRAMS" />
+          <a href="programs.html" class="font_sub"><i class="fa-solid fa-briefcase-blank"></i> Our PROGRAMS</a>
+        </div>
+      </div>
+      <!-- end | Our programs -->
+    </div>
+  </div><!------------------- end container | SEARCH PETS ------------------->
+
+  <!------------------- ABOUT US ------------------->
+  <div class="container" id="bg_aboutus">
+    <!-- Title -->
+    <div class="row">
+      <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-0 col-12 heading_content">
+        <h4 class="txtred">ABOUT US</h4>
+        <h1>We are <span class="txtred">littlepaws</span></h1>
+        <h4>
+          The littlepaws Pet Foundation is a national animal welfare
+          organization dedicated to ending pet homelessness.
+        </h4>
+        <p>
+          For almost one decade, littlepaws PF. has helped in creating true
+          social change by bringing pet adoption into the mainstream. Our work
+          has helped make a difference to the Vietnamese rescue community and
+          thousands of pets in need of rescue and rehabilitation.
+        </p>
+        <p>
+          But, until every pet is safe, respected, and loved, we all still
+          have big, hairy work to do. Find out more about our mission to help
+          save over 10,000 healthy and rehomable pets each year.
+        </p>
+        <a href="aboutus.html" class="btnred">FIND OUT MORE ABOUT US</a>
+      </div>
+    </div>
+    <!-- end | Title -->
+
+    <!-- Content A -->
+    <div class="row">
+      <!-- Text -->
+      <div class="col-xl-6 col-lg-7 col-md-7 order-md-1 col-sm-12 col-12 order-2 aboutus_content">
+        <div class="title_aboutus">
+          <div>
+            <i class="fa-solid fa-heart fa_60px"></i>
+          </div>
+          <h4>
+            9 years of impact,<br />
+            <span class="txtred">88,888 lives</span> touched and counting!
+          </h4>
+        </div>
+        <p>
+          littlepaws PF. supports programs and initiatives focused on
+          addressing the pet overpopulation crisis in all 63 provinces/cities.
+          Through donation and fundrasing for pet adoption, spay &amp; neuter,
+          microchipping and emergencies we are making a difference to reduce
+          the number of pets in shelters and rescues.
+        </p>
+        <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <!-- Image -->
+      <div class="offset-xl-1 col-xl-5 col-lg-5 col-md-5 order-md-2 col-sm-12 offset-0 col-12 order-1 aboutus_img">
+        <img src="img/About us 1. Girl A.jpg" alt="Girl A" />
+      </div>
+    </div>
+    <!-- end | Content A -->
+
+    <!-- Content B -->
+    <div class="row">
+      <!-- Image -->
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 aboutus_img">
+        <img src="img/About us 2. Girl B.jpg" alt="Girl B" />
+      </div>
+
+      <!-- Text -->
+      <div class="offset-xl-1 col-xl-6 col-lg-7 col-md-7 col-sm-12 offset-0 col-12 aboutus_content_right">
+        <div class="title_aboutus_right">
+          <div class="fa1">
+            <i class="fa-solid fa-can-food fa_60px"></i>
+          </div>
+          <h4 class="txt1">
+            <span class="txtred">1.2 billion Vietnamese Dong</span> in food<br />
+            and product donations
+          </h4>
+          <h4 class="txt2">
+            <span class="txtred">1.2 billion Vietnamese Dong</span> in food
+            and product donations
+          </h4>
+          <div class="fa2">
+            <i class="fa-solid fa-can-food fa_60px"></i>
+          </div>
+        </div>
+        <p>
+          Thanks to our major partner - MARS Petcare, littlepaws PF. national
+          food donation program delivers millions of dongs worth of food for
+          free to vulnerable and at-risk pets.
+        </p>
+        <p>
+          Thousands of tonnes of food are generously donated by MARS Petcare,
+          and together with our partners, littlepaws PF. manages the logistics
+          of this massive operation - ensuring these truckloads of pet food
+          are delivered to the right place at the right time for hundreds of
+          rescue groups, shelters, and pounds across Vietnam.
+        </p>
+        <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <!-- end | Content B -->
+  </div><!------------------- end | ABOUT US ------------------->
+
+  <!------------------- FEATURED PETS ------------------->
+  <div class="container" id="bg_featured">
+    <div class="row">
+      <!-- Title -->
+      <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-0 col-12 home_cont text-center">
+        <img class="cloud_img" src="img/Featured - Cloud.jpg" alt="Cloud">
+        <h4 class="txtred">FEATURED PETS TO ADOPT</h4>
+        <h1>
+          Featured <span class="txtred">littlepaws</span>'s pets available
+          for adoption
+        </h1>
+      </div>
+
+      <!-- Dogs category -->
+      <div class="col-xl-12 home_dogs">
+        <h4><i class="fa-regular fa-dog fa_cardicon"></i> Dogs available for
+          adoption</h4>
+        <a href="product_dogs.html" class="btn_readmore">View all dogs <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Dogs -->
+      <div class="col-xl-12 owl-carousel owl-theme owl_dogs">
+        <!-- Dog 1 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Nem 1.jpg" alt="Nem" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Nem</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">987654</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Female<br />
+            <span class="font_sub">Age:</span> 2 years<br />
+            <span class="font_sub">Breed:</span> Pembroke Corgi -
+            Yellow/White/Black<br />
+            <span class="font_sub">Size:</span> Small (7 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_nem.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Dog 2 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Dog 2 Murdock.jpg" alt="Murdock" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Murdock</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">978530</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Male<br />
+            <span class="font_sub">Age:</span> 11 weeks<br />
+            <span class="font_sub">Breed:</span> Blue Heeler Mix Dog -
+            White/Blue Merle<br />
+            <span class="font_sub">Size:</span> Small (4 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Bien Hoa City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_murdock.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Dog 3 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Dog 3 Ernie.webp" alt="Murdock" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Ernie</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">978531</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Female<br />
+            <span class="font_sub">Age:</span> 1 year<br />
+            <span class="font_sub">Breed:</span> Golden Retriever -
+            Brown/White<br />
+            <span class="font_sub">Size:</span> Large (14 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_ernie.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Dog 4 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Dog 4 Nova.webp" alt="Nova" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Nova</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">978532</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Female<br />
+            <span class="font_sub">Age:</span> 11 weeks<br />
+            <span class="font_sub">Breed:</span> Blue Heeler Mix Dog -
+            Brown/Black/White<br />
+            <span class="font_sub">Size:</span> Small (5 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_nova.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Dog 5 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Dog 5 Buster.webp" alt="Buster" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Buster</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">978532</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Male<br />
+            <span class="font_sub">Age:</span> 3 years<br />
+            <span class="font_sub">Breed:</span> Staffordshire Bull Terrier
+            Mix Dog - Red/White<br />
+            <span class="font_sub">Size:</span> Medium (10 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Thu Duc City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_buster.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- end | Dogs -->
+
+      <!-- Cats category -->
+      <div class="col-xl-12 home_cats">
+        <h4><i class="fa-regular fa-cat fa_cardicon"></i> Cats available for
+          adoption</h4>
+        <a href="product_cats.html" class="btn_readmore">View all cats <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Cats -->
+      <div class="col-xl-12 owl-carousel owl-theme owl_dogs">
+        <!-- Cat 1 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Cat 1 Buffy.webp" alt="Buffy" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Buffy</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">968529</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Female<br />
+            <span class="font_sub">Age:</span> 6 years<br />
+            <span class="font_sub">Breed:</span> Domestic Long Hair Cat -
+            Red/Black/White<br />
+            <span class="font_sub">Size:</span> Medium (7 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_buffy.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Cat 2 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Cat 2 Arch and Alaska.webp" alt="Arch and Alaska" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Arch &amp; Alaska</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">918530</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Male &amp; Female<br />
+            <span class="font_sub">Age:</span> 4 years<br />
+            <span class="font_sub">Breed:</span> Bonded - Domestic Short Hair
+            Cat - White/Gray<br />
+            <span class="font_sub">Size:</span> Small (5 kg) ea.
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_bonded_arch_alaska.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Cat 3 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Cat 3 Angel.webp" alt="Angel" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Angel</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">938531</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Female<br />
+            <span class="font_sub">Age:</span> 2 year<br />
+            <span class="font_sub">Breed:</span> Domestic Short Hair Cat -
+            Yellow/Gray/White<br />
+            <span class="font_sub">Size:</span> Small (4 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_angel.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Cat 4 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Cat 4 Boomer.webp" alt="Boomer" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Boomer</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">978032</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Male<br />
+            <span class="font_sub">Age:</span> 3 years<br />
+            <span class="font_sub">Breed:</span> Domestic Short Hair Cat -
+            Black/White<br />
+            <span class="font_sub">Size:</span> Small (4 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Ho Chi Minh City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_boomer.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+
+        <!-- Cat 5 -->
+        <div class="card_featured">
+          <!-- Image -->
+          <img class="img_featured" src="img/Cat 5 Bongo.webp" alt="Bongo" /><!-- end | Image -->
+
+          <!-- Content -->
+          <h4 class="title_featured">
+            <span class="txtred">Bongo</span>
+            <i class="fa-regular fa-heart icon_fa"></i>
+          </h4>
+          <p class="font_label">
+            Status: Adoptable<br />
+            ID: <span class="txtred">975532</span>
+          </p>
+          <p>
+            <span class="font_sub">Gender:</span> Male<br />
+            <span class="font_sub">Age:</span> 1 years<br />
+            <span class="font_sub">Breed:</span> Domestic Short Hair Cat -
+            White/Black<br />
+            <span class="font_sub">Size:</span> Small (3 kg)
+          </p>
+          <p class="margin_top mb-0">
+            <span class="font_sub">Foster:</span> Da Lat City, Vietnam
+          </p>
+
+          <!-- Button -->
+          <div class="btn_featured">
+            <a href="apply.html" class="btnred"><i class="fa-solid fa-file-check"></i> APPLY</a>
+            <a href="detail_bongo.html" class="btnyellow"><i class="fa-solid fa-eye"></i> <span
+                class="fa2">Read</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- end | Cats -->
+    </div>
+  </div><!------------------- end | FEATURED PETS ------------------->
+
+  <!------------------- OUR PROGRAMS ------------------->
+  <div class="container" id="bg_programs">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-xl-7 col-lg-8 home_cont">
+        <h4 class="txtred">OUR PROGRAMS</h4>
+        <h1>
+          We <span class="txtred">littlepaws</span> is here to help with our
+          best staffs
+        </h1>
+        <p>
+          Every day, shelters and rescues across Vietnam work tirelessly to
+          address the pet overpopulation crisis. littlepaws PF. is here to
+          help. We offer a variety of programs and grant assistance to help
+          animal welfare organizations change the outlook for the pets of
+          their communities.
+        </p>
+      </div>
+      <!-- end | Title -->
+
+      <!-- Image -->
+      <div class="offset-xl-1 col-xl-4 col-lg-4">
+        <div class="img_programs">
+          <img src="img/Programs.svg" alt="PROGRAMS image" />
+        </div>
+      </div>
+      <!-- end | Image -->
+
+      <!-- Sitting -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-dog-leashed fa-sm fa_cardicon"></i> Sitting
+          </h4>
+          <p>
+            littlepaws Pet Foundation's facility in Ho Chi Minh City, Vietnam
+            provides shelters and fosters for many of our dogs and cats. In
+            addition to a roof over their heads, we pay for heat, food, water,
+            electricity, and general maintenance.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Sitting -->
+
+      <!-- Grooming -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-scissors fa-sm fa_cardicon"></i> Grooming
+          </h4>
+          <p>
+            With proper dogs and cats grooming, you will get rid of shedding,
+            fleas, ticks, and various health conditions. It will also allow
+            you to identify any underlying conditions or diseases early.
+            Therefore, you will be able to take your pets for treatment sooner
+            and more efficiently.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Grooming -->
+
+      <!-- Vetting -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-briefcase-medical fa-sm fa_cardicon"></i>
+            Vetting
+          </h4>
+          <p>
+            Our clinic provides vet care to our dogs and cats. General health
+            assessments, medications, vaccinations, blood work, testing and
+            other necessary surgeries are all a part of the day- to-day
+            routine.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Vetting -->
+
+      <!-- Spay & Neuter -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-neuter fa-sm fa_cardicon"></i> Spay &amp;
+            Neuter
+          </h4>
+          <p>
+            Spaying and neutering prevent unwanted litters, help protect
+            against some serious health problems, and may reduce many of the
+            behavioral problems associated with the mating instinct.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Spay & Neuter -->
+
+      <!-- Training -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-shield-dog fa-sm fa_cardicon"></i> Training
+          </h4>
+          <p>
+            Training the pets not only keeps them safer in unpredictable
+            situations, it’s also an excellent way to strengthen your bond and
+            deepen your relationship.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Training -->
+
+      <!-- Cremation -->
+      <div class="col-xl-4 col-lg-4 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-fish-bones fa-sm fa_cardicon"></i> Cremation
+          </h4>
+          <p>
+            We believe your treasured pets are important part of the family
+            and should be honoured when they pass away. We offer affordable
+            pet cremation services that are suitable for dogs, cats at our
+            on-site crematorium.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Cremation -->
+
+      <!-- Mobile -->
+      <div class="d-md-none col-12 volunteer_mobile">
+        <!-- Sitting -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs1" aria-expanded="false"
+          aria-controls="programs1">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-dog-leashed fa-sm fa_cardicon"></i>
+              Sitting
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs1" class="collapse">
+          <div class="cont_a2">
+            <p>
+              littlepaws Pet Foundation's facility in Ho Chi Minh City,
+              Vietnam provides shelters and fosters for many of our dogs and
+              cats. In addition to a roof over their heads, we pay for heat,
+              food, water, electricity, and general maintenance.
+            </p>
+            <p>
+              While most of the work is done by dedicated volunteers, we have
+              a small kennel staff to help care for the pets.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Sitting -->
+
+        <!-- Grooming -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs2" aria-expanded="false"
+          aria-controls="programs2">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-scissors fa-sm fa_cardicon"></i> Grooming
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs2" class="collapse">
+          <div class="cont_a2">
+            <p>
+              It is an important aspect of a pet’s overall well-being and
+              health. Pet grooming is important for the whole family as well.
+            </p>
+            <p>
+              With proper dogs and cats grooming, you will get rid of
+              shedding, fleas, ticks, and various health conditions. It will
+              also allow you to identify any underlying conditions or diseases
+              early. Therefore, you will be able to take your pets for
+              treatment sooner and more efficiently.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Grooming -->
+
+        <!-- Vetting -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs3" aria-expanded="false"
+          aria-controls="programs3">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-briefcase-medical fa-sm fa_cardicon"></i>
+              Vetting
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs3" class="collapse">
+          <div class="cont_a2">
+            <p>
+              Our clinic provides vet care to our dogs and cats. General
+              health assessments, medications, vaccinations, blood work,
+              testing and other necessary surgeries are all a part of the day-
+              to-day routine.
+            </p>
+            <p>
+              Additionally, we pay for specialist care, as needed, to maintain
+              the health of our pets.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Vetting -->
+
+        <!-- Spay & Neuter -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs4" aria-expanded="false"
+          aria-controls="programs4">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-neuter fa-sm fa_cardicon"></i> Spay &amp;
+              Neuter
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs4" class="collapse">
+          <div class="cont_a2">
+            <p>
+              Every year, millions of unwanted dogs and cats are euthanized.
+              By having your dog or cat sterilized, you will do your part to
+              prevent the birth of unwanted puppies and kittens.
+            </p>
+            <p>
+              Spaying and neutering prevent unwanted litters, help protect
+              against some serious health problems, and may reduce many of the
+              behavioral problems associated with the mating instinct.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Spay & Neuter -->
+
+        <!-- Training -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs5" aria-expanded="false"
+          aria-controls="programs5">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-shield-dog fa-sm fa_cardicon"></i>
+              Training
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs5" class="collapse">
+          <div class="cont_a2">
+            <p>
+              Training your pets - whether you just got a puppy/kitten or want
+              to teach an old pet new tricks - can be a rewarding experience
+              for both you and your pet.
+            </p>
+            <p>
+              Training the pets not only keeps them safer in unpredictable
+              situations, it’s also an excellent way to strengthen your bond
+              and deepen your relationship.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Training -->
+
+        <!-- Cremation -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#programs6" aria-expanded="false"
+          aria-controls="programs6">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-fish-bones fa-sm fa_cardicon"></i>
+              Cremation
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="programs6" class="collapse">
+          <div class="cont_a2">
+            <p>
+              We believe your treasured pets are important part of the family
+              and should be honoured when they pass away. We offer affordable
+              pet cremation services that are suitable for dogs, cats at our
+              on-site crematorium.
+            </p>
+            <p>
+              All pets are handled with care and compassion and we guarantee
+              all of your pet’s ashes are returned in either a scatter box or
+              pet urn.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Cremation -->
+      </div>
+      <!-- end | Mobile -->
+    </div>
+  </div><!------------------- end | OUR PROGRAMS ------------------->
+
+  <!------------------- ASSISTED REHOMING ------------------->
+  <div class="container-fluid" id="bg_rehoming">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-8 home_cont">
+          <div class="title_align_center">
+            <h4>ASSISTED REHOMING</h4>
+            <h1>
+              Do you want we <span class="txtdark">littlepaws</span> to rehome
+              your beloved pet?
+            </h1>
+          </div>
+          <p>
+            There are many different situations that can lead to you needing
+            to rehome your beloved pet.
+          </p>
+          <p>
+            Our program AssistedRehoming™ can help you find the best new home
+            for your pet while they stay safe and stress-free in your home,
+            but if we can, we'd love to help you and your pet stay together.
+          </p>
+          <p class="mb-0">
+            Below, you'll find some great advice and resources. These have
+            been gathered based on the most common enquiries received by the
+            littlepaws PF. help desk to help you make the best decision for
+            your pet.
+          </p>
+          <a href="assistedrehoming.html" class="btnyellow">READ MORE</a>
+        </div>
+
+        <!-- Image -->
+        <div class="col-xl-6 col-lg-4 img_re">
+          <div class="img_rehoming">
+            <img src="img/Rehoming.svg" alt="REHOMING image" />
+          </div>
+        </div>
+        <!-- end | Image -->
+      </div>
+    </div>
+  </div><!------------------- end | ASSISTED REHOMING ------------------->
+
+  <!------------------- VOLUNTEERS ------------------->
+  <div class="container" id="bg_volunteers">
+    <div class="row">
+      <!-- Title -->
+      <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 offset-0 col-12  home_cont">
+        <img class="heart_left_img" src="img/Heart-left.jpg" alt="Heart-left">
+        <img class="heart_right_img" src="img/Heart-right.jpg" alt="Heart-left">
+        <h4 class="txtred">VOLUNTEERS</h4>
+        <h1>
+          We <span class="txtred">littlepaws</span> truly appreciate your
+          interest in helping!
+        </h1>
+        <p class="mb-0">
+          We littlepaws PF. relies on volunteers to help our dogs and cats in
+          many ways – either directly (fostering, socializing, feeding, ...)
+          or through the day-to-day activities that are necessary for running
+          an organization. Without these dedicated individuals, we would not
+          be able to accomplish all that we do.
+        </p>
+        <a href="volunteers.html" class="btnred">JOIN US NOW</a>
+      </div>
+      <!-- end | Title -->
+
+      <!-- Opportunities -->
+      <div class="col-xl-3 col-lg-3 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-lightbulb-on fa-sm fa_cardicon"></i>
+            Opportunities
+          </h4>
+          <p>
+            From feeding puppies and kittens at the littlepaws PF. to making
+            donor thank you calls from your home, we have volunteer positions
+            for anyone who wants to make a difference.
+          </p>
+          <p>Check out the many opportunities and get involved today!</p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Opportunities -->
+
+      <!-- Become a Foster -->
+      <div class="col-xl-3 col-lg-3 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-house-heart fa-sm fa_cardicon"></i> Become a
+            Foster
+          </h4>
+          <p>
+            To help provide a safe space for pets to begin their new, happy
+            lives. We littlepaws PF. would not exist without foster homes.
+          </p>
+          <p>
+            As foster parents to the dogs and cats of our facility, you
+            provide the love and stability they need. We thank you for that!
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Become a Foster -->
+
+      <!-- Donate -->
+      <div class="col-xl-3 col-lg-3 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-hand-holding-heart fa-sm fa_cardicon"></i>
+            Donate
+          </h4>
+          <p>
+            We littlepaws PF. has worked tirelessly to put an end to animal
+            abuse and neglect.
+          </p>
+          <p>
+            We are a national leader in animal rescue, protection and
+            placement, and your donation will help fight cruelty and make a
+            life-changing difference for pets.
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Donate -->
+
+      <!-- Fundraise -->
+      <div class="col-xl-3 col-lg-3 col-md-6 d-md-flex d-none">
+        <div class="cont_a2">
+          <h4>
+            <i class="fa-solid fa-circle-dollar-to-slot fa-sm fa_cardicon"></i>
+            Fundraise
+          </h4>
+          <p>
+            Don't be disheartened about the recurring expenses and being
+            unable to provide the basic needs of these loving animals and
+            pets.
+          </p>
+          <p>
+            Instead, start an Animal Crowdfunding Campaign with us littlepaws
+            PF. today!
+          </p>
+          <span class="text_button">
+            <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+          </span>
+        </div>
+      </div>
+      <!-- end | Fundraise -->
+
+      <!-- Mobile -->
+      <div class="d-md-none col-12 volunteer_mobile">
+        <!-- Opportunities -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#volunteer1" aria-expanded="false"
+          aria-controls="volunteer1">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-lightbulb-on fa-sm fa_cardicon"></i>
+              Opportunities
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="volunteer1" class="collapse">
+          <div class="cont_a2">
+            <p>
+              From feeding puppies and kittens at the littlepaws PF. to making
+              donor thank you calls from your home, we have volunteer
+              positions for anyone who wants to make a difference.
+            </p>
+            <p>Check out the many opportunities and get involved today!</p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Opportunities -->
+
+        <!-- Become a Foster -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#volunteer2" aria-expanded="false"
+          aria-controls="volunteer2">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-house-heart fa-sm fa_cardicon"></i> Become
+              a Foster
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="volunteer2" class="collapse">
+          <div class="cont_a2">
+            <p>
+              To help provide a safe space for pets to begin their new, happy
+              lives. We littlepaws PF. would not exist without foster homes.
+            </p>
+            <p>
+              As foster parents to the dogs and cats of our facility, you
+              provide the love and stability they need. We thank you for that!
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Become a Foster -->
+
+        <!-- Donate -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#volunteer3" aria-expanded="false"
+          aria-controls="volunteer3">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-hand-holding-heart fa-sm fa_cardicon"></i>
+              Donate
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="volunteer3" class="collapse">
+          <div class="cont_a2">
+            <p>
+              We littlepaws PF. has worked tirelessly to put an end to animal
+              abuse and neglect.
+            </p>
+            <p>
+              We are a national leader in animal rescue, protection and
+              placement, and your donation will help fight cruelty and make a
+              life-changing difference for pets.
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Donate -->
+
+        <!-- Fundraise -->
+        <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#volunteer4" aria-expanded="false"
+          aria-controls="volunteer4">
+          <span class="font_label">
+            <h4>
+              <i class="fa-solid fa-circle-dollar-to-slot fa-sm fa_cardicon"></i>
+              Fundraise
+            </h4>
+          </span>
+          <i class="fa_icon fa-solid fa-chevrons-down fa-sm"></i>
+        </button>
+
+        <div id="volunteer4" class="collapse">
+          <div class="cont_a2">
+            <p>
+              Don't be disheartened about the recurring expenses and being
+              unable to provide the basic needs of these loving animals and
+              pets.
+            </p>
+            <p>
+              Instead, start an Animal Crowdfunding Campaign with us
+              littlepaws PF. today!
+            </p>
+            <span class="text_button">
+              <a href="#" class="btn_readmore">Read more <i class="fa-solid fa-chevron-right"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- end | Fundraise -->
+      </div>
+      <!-- end | Mobile -->
+
+      <!-- Image -->
+      <div class="col-xl-12">
+        <img class="img-fluid mt-5" src="img/Subscribe.jpg" alt="VOLUNTEER image" />
+      </div>
+      <!-- end | Image -->
+    </div>
+  </div><!------------------- end | VOLUNTEERS ------------------->
+
+  <!------------------- SUBSCRIBE ------------------->
+  <div class="container" id="bg_subscribe">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-xl-7 col-lg-8 home_cont">
+        <h4 class="txtred">SUBSCRIBE AND STAY CONNECTED</h4>
+        <h1>
+          Your <span class="txtred">happier</span> (and
+          <span class="txtred">furrier</span>) inbox awaits!
+        </h1>
+        <p>
+          You will get a dose of happy adoption stories (we call them Happy
+          Tails!), adorable pets looking for love, great advice for pet
+          owners, tips to boost your search for a furry family member, updates
+          on littlepaws PF.’s work to create a future where every pet is safe,
+          respected and loved, and lots more.
+        </p>
+        <p>
+          We promise we won’t spam you, and we will keep your details top
+          secret.
+        </p>
+        <a href="#" class="btn_readmore">
+          Check out our Privacy Policy
+          <i class="fa-solid fa-chevron-right fa-sm"></i>
+        </a>
+      </div>
+      <!-- end | Title -->
+
+      <!-- Form -->
+      <div class="offset-xl-1 col-xl-4 col-lg-4 align_form">
+        <form action="#" id="form_subscribe">
+          <!-- First name -->
+          <label for="fname">
+            <h6>Your first name</h6>
+          </label>
+          <input type="text" id="fname" name="fname" placeholder="Enter your first name here..." />
+          <br /><br />
+
+          <!-- Email -->
+          <label for="email">
+            <h6>Your email</h6>
+          </label>
+          <input type="email" id="email" name="email" placeholder="Enter your email here..." />
+
+          <!-- Button -->
+          <div class="align_submit">
+            <input type="submit" value="SUBSCRIBE NOW" class="btnred" />
+          </div>
+        </form>
+      </div>
+      <!-- end | Form -->
+    </div>
+  </div><!------------------- end | SUBSCRIBE ------------------->
+
+  <!------------------- PARTNERS ------------------->
+  <div class="container" id="bg_partners">
+    <div class="row">
+      <!-- Title -->
+      <div class="offset-xl-2 col-xl-8 home_cont">
+        <h4 class="txtred">OUR PARTNERS</h4>
+        <h1>
+          We <span class="txtred">littlepaws</span> value our generous
+          Sponsors &amp; Partners
+        </h1>
+      </div>
+
+      <!-- Partners -->
+      <div class="col-xl-12">
+        <!-- Owl Carousel -->
+        <div class="owl-carousel owl-theme owl_partners">
+          <!-- 1 SmartHeart -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://smartheart.my"><img src="img/Partners - 1.png" alt="SmartHeart" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">SmartHeart</h6>
+              <p class="font_smalltext">
+                High quality products for companion animals.
+              </p>
+            </div>
+          </div>
+          <!-- end | SmartHeart -->
+
+          <!-- 2 Royal Canin -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.royalcanin.com"><img src="img/Partners - 2.png" alt="Royal Canin" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">Royal Canin</h6>
+              <p class="font_smalltext">
+                Create tailored nutrition that helps pets live their
+                healthiest lives.
+              </p>
+            </div>
+          </div>
+          <!-- end | Royal Canin -->
+
+          <!-- 3 Ganador -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.asia.ganador-petfood.com"><img src="img/Partners - 3.png" alt="Ganador" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">Ganador</h6>
+              <p class="font_smalltext">
+                Offering health and wellness to beloved dogs and cats through
+                a continuous innovation process with nutritional and
+                scientific expertise.
+              </p>
+            </div>
+          </div>
+          <!-- end | Ganador -->
+
+          <!-- 4 Petfinder -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.petfinder.com"><img src="img/Partners - 4.png" alt="Petfinder" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">Petfinder</h6>
+              <p class="font_smalltext">
+                Sharing database of dogs and cats who need homes.
+              </p>
+            </div>
+          </div>
+          <!-- end | Petfinder -->
+
+          <!-- 5 Pedigree Petfoods -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.pedigree.com"><img src="img/Partners - 5.png" alt="Pedigree Petfoods" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">Pedigree Petfoods</h6>
+              <p class="font_smalltext">
+                Dogs bring out the good in us. PEDIGREE® brings out the good
+                in them.
+              </p>
+            </div>
+          </div>
+          <!-- end | Pedigree Petfoods -->
+
+          <!-- 6 Mars Petcare -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.mars.com"><img src="img/Partners - 6.png" alt="Mars Petcare" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">Mars Petcare</h6>
+              <p class="font_smalltext">
+                We believe that pets make the world a better place, we have
+                one purpose: A BETTER WORLD FOR PETS.
+              </p>
+            </div>
+          </div>
+          <!-- end | Mars Petcare -->
+
+          <!-- 7 PetRescue -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.petrescue.com.au"><img src="img/Partners - 7.png" alt="PetRescue" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">PetRescue</h6>
+              <p class="font_smalltext">
+                Join our big, hairy, audacious mission to create a future
+                where every pet in Australia is safe, respected and loved.
+              </p>
+            </div>
+          </div>
+          <!-- end | PetRescue -->
+
+          <!-- 8 WHISKAS -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://www.whiskas.com.vn"><img src="img/Partners - 8.png" alt="WHISKAS" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">WHISKAS</h6>
+              <p class="font_smalltext">
+                We ensure all our meals are full of the natural goodness your
+                cat deserves as well as always being nutritionally complete
+                and balanced.
+              </p>
+            </div>
+          </div>
+          <!-- end | WHISKAS -->
+
+          <!-- 9 FRONTLINE® -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://frontline.com"><img src="img/Partners - 9.svg" alt="FRONTLINE®" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">FRONTLINE®</h6>
+              <p class="font_smalltext">
+                Take your pets everywhere with FRONTLINE® Shield for dogs and
+                cats.
+              </p>
+            </div>
+          </div>
+          <!-- end | FRONTLINE® -->
+
+          <!-- 10 NexGard® -->
+          <div class="card_partners">
+            <!-- Image -->
+            <div class="img_partners">
+              <a href="https://smartheart.my"><img src="img/Partners - 10.svg" alt="NexGard®" /></a>
+            </div>
+
+            <!-- Content -->
+            <div class="cont_partners">
+              <h6 class="txtred">NexGard®</h6>
+              <p class="font_smalltext">
+                NexGard is a tasty beef-flavoured chew that provides flea,
+                tick and mite protection for dogs.
+              </p>
+            </div>
+          </div>
+          <!-- end | NexGard® -->
+        </div>
+        <!-- end Owl Carousel -->
+      </div>
+      <!-- end Partners -->
+    </div>
+  </div><!------------------- end | PARTNERS ------------------->
+
+  <!------------------- FOOTER ------------------->
+  <div class="container-fluid" id="bg_footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Information -->
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+          <!-- Logo -->
+          <div class="footer_logo">
+            <a href="home.html"><img src="img/Logo-40px.svg" alt="littlepaws's Logo" /></a>
+          </div>
+
+          <!-- Address -->
+          <div class="footer_cont">
+            <span class="font_label">The littlepaws Pet Foundation™</span>
+            <p>Monday to Saturday from 8:00 AM to 6:00 PM GMT+7 (Vietnam)</p>
+            <p class="mb-0">
+              <span class="font_label">Address:</span> GIC Tower, 275 Nguyen
+              Van Dau, Ward 11, Binh Thanh District, Ho Chi Minh City,
+              Vietnam<br />
+              <span class="font_label">Email:</span>
+              contactus@littlepaws.vn<br />
+              <span class="font_label">Contact:</span> (+84)888 088 765
+            </p>
+          </div>
+
+          <!-- Social logo -->
+          <div class="footer_social">
+            <div class="font_label">Follow us:</div>
+            <div class="social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa_button fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa_button fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa_button fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa_button fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- end | Logo & Information -->
+
+        <!-- Social logo with text -->
+        <div class="d-xl-none col-lg-6 col-md-6 d-md-block d-none" id="social_logo_text">
+          <div class="row">
+            <!-- Title -->
+            <div class="col-lg-12 col-md-12 font_label">Follow us:</div>
+
+            <!-- Social Logo -->
+            <!-- A -->
+            <div class="col-lg-4 d-lg-flex d-none social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-facebook-f"></i> <span class="txtdark">Facebook</span></a>
+              <a href="#"><i class="fa_button fa-brands fa-twitter"></i> <span class="txtdark">Twitter</span></a>
+            </div>
+            <!-- B -->
+            <div class="col-lg-4 d-lg-flex d-none social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-tiktok"></i> <span class="txtdark">TikTok</span></a>
+              <a href="#"><i class="fa_button fa-brands fa-linkedin-in"></i> <span class="txtdark">LinkedIn</span></a>
+            </div>
+            <!-- C -->
+            <div class="col-lg-4 d-lg-flex d-none social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-youtube"></i> <span class="txtdark">YouTube</span></a>
+            </div>
+            <!-- D -->
+            <div class="d-lg-none col-md-6 d-md-flex d-none social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-facebook-f"></i> <span class="txtdark">Facebook</span></a>
+              <a href="#"><i class="fa_button fa-brands fa-twitter"></i> <span class="txtdark">Twitter</span></a>
+              <a href="#"><i class="fa_button fa-brands fa-tiktok"></i> <span class="txtdark">TikTok</span></a>
+            </div>
+            <div class="d-lg-none col-md-6 d-md-flex d-none social_logo">
+              <a href="#"><i class="fa_button fa-brands fa-linkedin-in"></i> <span class="txtdark">LinkedIn</span></a>
+              <a href="#"><i class="fa_button fa-brands fa-youtube"></i> <span class="txtdark">YouTube</span></a>
+            </div>
+          </div>
+        </div><!-- end | Social logo with text -->
+
+        <!-- Links -->
+        <div class="col-xl-9 col-lg-12 col-md-12 d-md-block d-none margin_top">
+          <div class="row">
+            <!-- About us -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">ABOUT US</div>
+              <ul>
+                <li><a href="aboutus_story.html">Our story</a></li>
+                <li><a href="aboutus_mission_vision.html">Our mission &amp; vision</a></li>
+                <li><a href="aboutus_team.html">Our team</a></li>
+                <li><a href="aboutus_partners.html">Partners, sponsors &amp; supporters</a></li>
+                <li><a href="aboutus_career.html">Career</a></li>
+              </ul>
+            </div>
+            <!-- end | About us -->
+
+            <!-- Our programs -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">OUR PROGRAMS</div>
+              <ul>
+                <li><a href="programs_sitting.html">Sitting</a></li>
+                <li><a href="programs_grooming.html">Grooming</a></li>
+                <li><a href="programs_vetting.html">Vetting</a></li>
+                <li><a href="programs_spayneuter.html">Spay &amp; neuter</a></li>
+                <li><a href="programs_training.html">Training</a></li>
+                <li><a href="programs_cremation.html">Cremation</a></li>
+              </ul>
+            </div>
+            <!-- end | Our programs -->
+
+            <!-- Assisted rehoming -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">ASSISTED REHOMING</div>
+              <ul>
+                <li><a href="assistedrehoming_whatis.html">What is AssistedRehoming™ Program?</a></li>
+                <li><a href="assistedrehoming_urgentsupport.html">Options for urgent support</a></li>
+                <li><a href="assistedrehoming_help.html">Help to keep your pet</a></li>
+                <li>
+                  <a href="assistedrehoming_programs.html">AssistedRehoming™ Program for vets, shelters &amp;
+                    pounds</a>
+                </li>
+                <li><a href="assistedrehoming_faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+            <!-- end | Assisted rehoming -->
+
+            <!-- Adopt dogs & cats -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">ADOPT DOGS &amp; CATS</div>
+              <ul>
+                <li><a href="product.html">Search pets</a></li>
+                <li><a href="adoption_faqs.html">Thinking about Adoption: FAQs</a></li>
+                <li><a href="assistedrehoming_faqs.html">Assisted Rehoming</a></li>
+                <li><a href="fostercare.html">Looking for Foster care</a></li>
+              </ul>
+            </div>
+            <!-- end | Adopt dogs & cats -->
+
+            <!-- Volunteer -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">VOLUNTEER</div>
+              <ul>
+                <li><a href="volunteers_opportunities.html">Volunteer opportunities</a></li>
+                <li><a href="volunteers_foster.html">Become a foster</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="fundraise.html">Fundraise</a></li>
+              </ul>
+            </div>
+            <!-- end | Volunteer -->
+
+            <!-- Quick links -->
+            <div class="col-xl-4 col-lg-4 col-md-4">
+              <div class="font_label">QUICK LINKS</div>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up as an adopter</a></li>
+                <li><a href="#">Sign up as a rescue group</a></li>
+                <li><a href="help.html">Help</a></li>
+              </ul>
+            </div>
+            <!-- end | Quick links -->
+          </div>
+        </div>
+        <!-- end | Links -->
+
+        <!-- Mobile | Links -->
+        <div class="d-md-none col-sm-12 col-12">
+          <!-- About us -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer1" aria-expanded="false"
+            aria-controls="footer1">
+            <span class="font_label">ABOUT US</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer1" class="collapse">
+            <ul>
+              <li><a href="aboutus_story.html">Our story</a></li>
+              <li><a href="aboutus_mission_vision.html">Our mission &amp; vision</a></li>
+              <li><a href="aboutus_team.html">Our team</a></li>
+              <li><a href="aboutus_partners.html">Partners, sponsors &amp; supporters</a></li>
+              <li><a href="aboutus_career.html">Career</a></li>
+            </ul>
+          </div>
+          <!-- end | About us -->
+
+          <!-- Our programs -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer2" aria-expanded="false"
+            aria-controls="footer2">
+            <span class="font_label">OUR PROGRAMS</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer2" class="collapse">
+            <ul>
+              <li><a href="programs_sitting.html">Sitting</a></li>
+              <li><a href="programs_grooming.html">Grooming</a></li>
+              <li><a href="programs_vetting.html">Vetting</a></li>
+              <li><a href="programs_spayneuter.html">Spay &amp; neuter</a></li>
+              <li><a href="programs_training.html">Training</a></li>
+              <li><a href="programs_cremation.html">Cremation</a></li>
+            </ul>
+          </div>
+          <!-- end | Our programs -->
+
+          <!-- Assisted rehoming -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer3" aria-expanded="false"
+            aria-controls="footer3">
+            <span class="font_label">ASSISTED REHOMING</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer3" class="collapse">
+            <ul>
+              <li><a href="assistedrehoming_whatis.html">What is AssistedRehoming™ Program?</a></li>
+              <li><a href="assistedrehoming_urgentsupport.html">Options for urgent support</a></li>
+              <li><a href="assistedrehoming_help.html">Help to keep your pet</a></li>
+              <li>
+                <a href="assistedrehoming_programs.html">AssistedRehoming™ Program for vets, shelters &amp;
+                  pounds</a>
+              </li>
+              <li><a href="assistedrehoming_faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+          <!-- end | Assisted rehoming -->
+
+          <!-- Adopt dogs & cats -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer4" aria-expanded="false"
+            aria-controls="footer4">
+            <span class="font_label">ADOPT DOGS &amp; CATS</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer4" class="collapse">
+            <ul>
+              <li><a href="product.html">Search pets</a></li>
+              <li><a href="adoption_faqs.html">Thinking about Adoption: FAQs</a></li>
+              <li><a href="assistedrehoming_faqs.html">Assisted Rehoming</a></li>
+              <li><a href="fostercare.html">Looking for Foster care</a></li>
+            </ul>
+          </div>
+          <!-- end | Adopt dogs & cats -->
+
+          <!-- Volunteer -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer5" aria-expanded="false"
+            aria-controls="footer5">
+            <span class="font_label">VOLUNTEER</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer5" class="collapse">
+            <ul>
+              <li><a href="volunteers_opportunities.html">Volunteer opportunities</a></li>
+              <li><a href="volunteers_foster.html">Become a foster</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="fundraise.html">Fundraise</a></li>
+            </ul>
+          </div>
+          <!-- end | Volunteer -->
+
+          <!-- Quick links -->
+          <button class="btn btn_footer collapsed" data-toggle="collapse" data-target="#footer6" aria-expanded="false"
+            aria-controls="footer6">
+            <span class="font_label">QUICK LINKS</span>
+            <i class="fa_icon fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+
+          <div id="footer6" class="collapse">
+            <ul>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Sign up as an adopter</a></li>
+              <li><a href="#">Sign up as a rescue group</a></li>
+              <li><a href="help.html">Help</a></li>
+            </ul>
+          </div>
+          <!-- end | Quick links -->
+        </div>
+        <!-- end | Mobile | Links -->
+      </div>
+    </div>
+    <!------------------- end container | FOOTER ------------------->
+  </div><!------------------- end container-fluid | FOOTER ------------------->
+
+  <!------------------- COPYRIGHT ------------------->
+  <div class="container-fluid" id="bg_copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font_label">
+          <!-- Desktop -->
+          <span class="txt1">
+            COPYRIGHT <i class="fa-sharp fa-regular fa-copyright"></i> The
+            littlepaws Pet Foundation™ 2023
+            <a href="termsofservice.html">Terms of Service</a> &amp;
+            <a href="privacypolicy.html">Privacy Policy</a> </span><!-- end | Desktop -->
+
+          <!-- Mobile -->
+          <span class="txt2">
+            COPYRIGHT <i class="fa-sharp fa-regular fa-copyright"></i> The
+            littlepaws Pet Foundation™ 2023<br />
+            <a href="termsofservice.html">Terms of Service</a> &amp;
+            <a href="privacypolicy.html">Privacy Policy</a> </span><!-- end | Mobile -->
+        </div>
+      </div>
+    </div>
+    <!------------------- end container | COPYRIGHT ------------------->
+  </div><!------------------- end container-fluid | COPYRIGHT ------------------->
+
+  <!-- JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Partners -->
+  <script>
+    $(document).ready(function () {
+      $(".owl_partners").owlCarousel({
+        items: 6,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        dot: true,
+        navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>',
+        ],
+        autoplaySpeed: 400,
+        responsive: {
+          0: {
+            nav: false,
+            items: 2,
+          },
+
+          576: {
+            nav: false,
+            items: 3,
+          },
+
+          768: {
+            items: 4,
+          },
+
+          992: {
+            items: 5,
+          },
+
+          1200: {
+            items: 6,
+          },
+        },
+      });
+    });
+  </script>
+
+  <!-- Dogs -->
+  <script>
+    $(document).ready(function () {
+      $(".owl_dogs").owlCarousel({
+        items: 4,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        dot: true,
+        navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>',
+        ],
+        autoplaySpeed: 400,
+        responsive: {
+          0: {
+            nav: false,
+            items: 1,
+          },
+
+          576: {
+            nav: false,
+            items: 2,
+          },
+
+          768: {
+            items: 3,
+          },
+
+          992: {
+            items: 4,
+          },
+
+          1200: {
+            items: 4,
+          },
+        },
+      });
+    });
+  </script>
+
+  <!-- fa-heart filled -->
+  <script>
+    $(".title_featured").click(function () {
+      $(this).find("i").toggleClass("fa-regular fa-heart fa-solid fa-heart");
+    });
+  </script>
+
+  <!-- Slide menu mobile-->
+  <script>
+    $(document).ready(function () {
+      $("#bg_menu_mobile").hide();
+      $("#bg_overlay").hide();
+
+      $("#icon_menu").click(function () {
+        $("#icon_menu").toggleClass("fa-solid fa-bars fa-solid fa-xmark");
+        $("#bg_menu_mobile").slideToggle(200);
+        $("#bg_overlay").fadeToggle(200);
+      });
+
+      $("#bg_overlay").click(function () {
+        $("#icon_menu").toggleClass("fa-solid fa-bars fa-solid fa-xmark");
+        $("#bg_menu_mobile").slideToggle(200);
+        $("#bg_overlay").fadeOut(200);
+      });
+    });
+  </script>
 </body>
+
 </html>
