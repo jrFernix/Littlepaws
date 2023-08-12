@@ -1,15 +1,93 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS ABOUT US */
 
-.btn{
-	display: flex;
-	align-items: center;
+/* ------------------- WHO WE ARE ------------------- */
+/* Style */
+#bg_who {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.fill_text{
-	margin-right: 20px;
+#bg_who h1,
+#bg_who h4 {
+	margin: 0;
 }
 
-.nav{
-	display: block;
+#bg_who img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* ------------------- STORY ------------------- */
+/* Style */
+#bg_story {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: rgba(254, 245, 222, 1);
+	padding: 30px;
+	border-radius: 60px;
+}
+
+.img_story {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	border: solid 1px rgba(32, 32, 32, 1);
+	border-radius: 30px;
+	padding: 15px;
+	box-shadow: 10px 10px 0 0 rgba(252, 204, 88, 1);
+}
+
+.img_story img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: solid 1px rgba(32, 32, 32, 1);
+	border-radius: 20px;
+}
+
+#bg_story .margin_top {
+	margin-top: 30px;
+}
+
+#bg_story p:last-child {
+	margin-bottom: 0;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- RESPONSIVE ------------------- */
+/* ------------------- MD ------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/* ------------------- STORY ------------------- */
+	/* Style */
+	.img_story {
+		height: 300px;
+		margin-bottom: 50px;
+	}
+}
+
+/* ------------------- SM ------------------- */
+@media (min-width: 576px) and (max-width: 767px) {
+
+	/* ------------------- STORY ------------------- */
+	/* Style */
+	.img_story {
+		height: 300px;
+		margin-bottom: 50px;
+	}
+}
+
+/* ------------------- XS ------------------- */
+@media (max-width: 575px) {
+
+	/* ------------------- STORY ------------------- */
+	/* Style */
+	.img_story {
+		height: 300px;
+		margin-bottom: 50px;
+	}
 }

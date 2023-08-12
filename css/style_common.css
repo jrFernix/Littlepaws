@@ -23,11 +23,16 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: InterLight;
   font-size: 16px;
   color: rgba(32, 32, 32, 1);
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* Heading */
@@ -89,6 +94,10 @@ h6 {
 
 .txtdark {
   color: rgba(32, 32, 32, 1.00);
+}
+
+.txtopacity {
+  opacity: 0.25;
 }
 
 /* Button */
@@ -158,9 +167,6 @@ h6 {
 
 /* ------------------- NAVIGATION ------------------- */
 #bg_navi {
-  position: sticky;
-  top: 0;
-  z-index: 1002;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: rgba(216, 33, 72, 1);
@@ -245,7 +251,9 @@ h6 {
   align-items: center;
 }
 
-#icon_menu {
+#icon_menu,
+#icon_menu_scroll,
+#icon_menu2 {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -254,19 +262,46 @@ h6 {
   color: rgba(216, 33, 72, 1);
   background-color: rgba(255, 255, 255, 1);
   border: solid 1px rgba(216, 33, 72, 1);
+  transition: all ease 0.3s;
+}
+
+/* ------------------- NAVI2 MENU ------------------- */
+#bg_navi2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: sticky;
+  z-index: 1111;
+  background-color: rgba(216, 33, 72, 1);
+}
+
+/* ------------------- NAVI SCROLL ------------------- */
+#bg_navi_scroll {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: none;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* ------------------- NAV MENU MOBILE ------------------- */
 #bg_menu_mobile {
   padding: 0;
+  display: none;
   position: fixed;
-  background-color: rgba(255, 255, 255, 1);
-  z-index: 1002;
+  top: 235px;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  box-shadow: 0 0 10px 0px rgba(32, 32, 32, 1);
 }
 
 #nav_menu_mobile {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 1.00);
 }
 
 #nav_menu_mobile .nav-link {
@@ -301,6 +336,8 @@ h6 {
   flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-family: InterMed;
   font-size: 14px;
   background-color: rgba(216, 33, 72, 1);
@@ -308,18 +345,87 @@ h6 {
 
 #sub_menu .nav-link {
   color: rgba(255, 255, 255, 1);
-  padding: 5px 30px;
+  padding: 5px 15px;
 }
 
 /* ------------------- OVERLAY ------------------- */
-#bg_overlay {
+#bg_overlay,
+#bg_overlay2 {
+  display: none;
   position: fixed;
-  z-index: 1001;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(32, 32, 32, 0.50);
   backdrop-filter: blur(8px);
+}
+
+#bg_overlay {
+  z-index: 1002;
+}
+
+#bg_overlay2 {
+  z-index: 1001;
+}
+
+/* ------------------- SEARCH ------------------- */
+#bg_search {
+  padding-top: 0;
+  padding-bottom: 50px;
+  background-color: rgba(216, 33, 72, 1);
+
+}
+
+#search_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg_search input {
+  width: 100%;
+  height: 40px;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border-bottom: solid 1px rgba(255, 255, 255, 1) !important;
+  border: none;
+  outline: none;
+}
+
+#bg_search input::placeholder {
+  font-family: InterMed;
+  text-align: center;
+}
+
+#bg_search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border: none;
+}
+
+.navi_menu {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navi_menu #search_icon {
+  color: rgba(216, 33, 72, 1);
+  font-size: 24px;
+}
+
+.search_icon {
+  color: rgba(216, 33, 72, 1);
+  font-size: 24px;
 }
 
 /* ------------------- SUBSCRIBE ------------------- */
@@ -502,6 +608,9 @@ h6 {
 /* ------------------- RESPONSIVE ------------------- */
 /* ------------------- XL ------------------- */
 @media (min-width: 1200px) {
+  #bg_overlay2 {
+    display: none !important;
+  }
 
   /* Button */
   .btnyellow:hover {
@@ -521,6 +630,15 @@ h6 {
   .btn_readmore:hover {
     transition: all ease 0.3s;
     color: rgba(32, 32, 32, 1);
+  }
+
+  #bg_search input {
+    text-align: center;
+  }
+
+  /* ------------------- NAVI2 ------------------- */
+  #bg_navi2 {
+    display: none !important;
   }
 
   /* ------------------- SUBSCRIBE ------------------- */
@@ -554,6 +672,10 @@ h6 {
 
   /* ------------------- NAVIGATION ------------------- */
   /* Header */
+  #bg_navi {
+    display: block !important;
+  }
+
   .header_left a:hover {
     transition: all ease 0.3s;
     color: rgba(32, 32, 32, 1);
@@ -571,10 +693,27 @@ h6 {
     color: rgba(216, 33, 72, 1);
     background-color: rgba(252, 204, 88, 1);
   }
+
+  /* ------------------- NAVI SCROLL ------------------- */
+  #bg_navi_scroll {
+    display: none !important;
+  }
 }
 
 /* ------------------- LG ------------------- */
 @media (min-width: 992px) and (max-width: 1199px) {
+  #bg_overlay2 {
+    display: none !important;
+  }
+
+  /* ------------------- NAVI2 ------------------- */
+  #bg_navi2 {
+    display: none !important;
+  }
+
+  #bg_search input {
+    text-align: center;
+  }
 
   /* Button */
   .btnyellow:hover {
@@ -627,6 +766,10 @@ h6 {
 
   /* ------------------- NAVIGATION ------------------- */
   /* Header */
+  #bg_navi {
+    display: block !important;
+  }
+
   .header_left a:hover {
     transition: all ease 0.3s;
     color: rgba(32, 32, 32, 1);
@@ -657,6 +800,11 @@ h6 {
     padding-right: 10px;
   }
 
+  /* ------------------- NAVI SCROLL ------------------- */
+  #bg_navi_scroll {
+    display: none !important;
+  }
+
   /* ------------------- FOOTER ------------------- */
   .footer_social {
     display: none;
@@ -665,6 +813,13 @@ h6 {
 
 /* ------------------- MD ------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
+  #bg_overlay2 {
+    display: none !important;
+  }
+
+  #bg_search input {
+    text-align: center;
+  }
 
   /* Heading */
   h1 {
@@ -673,6 +828,10 @@ h6 {
 
   /* ------------------- NAVIGATION ------------------- */
   /* Logo header */
+  #bg_navi {
+    display: block !important;
+  }
+
   .logo_header {
     display: flex;
     justify-content: center;
@@ -685,7 +844,16 @@ h6 {
     padding-right: 10px;
   }
 
-  /* ------------------- FEATURED PETS ------------------- */
+
+  /* ------------------- NAVI2 ------------------- */
+  #bg_navi2 {
+    display: none !important;
+  }
+
+  /* ------------------- NAVI SCROLL ------------------- */
+  #bg_navi_scroll {
+    display: none !important;
+  }
 
   /* ------------------- SUBSCRIBE ------------------- */
   /* Style */
@@ -698,6 +866,7 @@ h6 {
   .footer_social {
     display: none;
   }
+
 
 }
 
@@ -711,9 +880,24 @@ h6 {
 
   /* ------------------- NAVIGATION ------------------- */
   /* Logo header */
+  #bg_navi {
+    display: none !important;
+  }
+
+  /* Logo header */
   .logo_header {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  /* ------------------- NAV MENU MOBILE ------------------- */
+  #bg_menu_mobile {
+    display: block;
+  }
+
+  /* ------------------- OVERLAY ------------------- */
+  #bg_overlay {
+    display: block;
   }
 
   /* ------------------- SUBSCRIBE ------------------- */
@@ -738,6 +922,12 @@ h6 {
 
   #bg_copyright .txt2 {
     display: block;
+  }
+
+  /* ------------------- SEARCH ------------------- */
+  #bg_search {
+    position: fixed;
+    z-index: 1099;
   }
 }
 
@@ -751,9 +941,24 @@ h6 {
 
   /* ------------------- NAVIGATION ------------------- */
   /* Logo header */
+  #bg_navi {
+    display: none !important;
+  }
+
+  /* Logo header */
   .logo_header {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  /* ------------------- NAV MENU MOBILE ------------------- */
+  #bg_menu_mobile {
+    display: block;
+  }
+
+  /* ------------------- OVERLAY ------------------- */
+  #bg_overlay {
+    display: block;
   }
 
   /* ------------------- SUBSCRIBE ------------------- */
@@ -778,5 +983,11 @@ h6 {
 
   #bg_copyright .txt2 {
     display: block;
+  }
+
+  /* ------------------- SEARCH ------------------- */
+  #bg_search {
+    position: fixed;
+    z-index: 1099;
   }
 }

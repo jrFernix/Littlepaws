@@ -1,23 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	
-  </head>
-  <body>
-  	<!-- body code goes here -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  <link href="css/all.min.css" rel="stylesheet" />
+  <link href="css/style_common.css" rel="stylesheet" />
+  <link href="css/style_home.css" rel="stylesheet" />
+  <link href="css/style_aboutus.css" rel="stylesheet" />
 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Owl Carousel CSS -->
+  <link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+  <!-- Title -->
+  <title>The littlepaws's About Us Page</title>
+</head>
+<!------------------- WHO WE ARE ------------------->
+<div class="container" id="bg_who">
+  <div class="row">
+    <div class="col-xl-12 text-center who">
+      <h4 class="txtred">WHO WE ARE</h4>
+      <div>
+        <img src="img/Logo-80px.svg" alt="Who we are">
+      </div>
+      <h1><span class="txtred">The littlepaws Pet Foundation</span> is a national animal welfare charity with a vision
+        of a future where every pet is
+        <span class="txtred">safe</span>, <span class="txtred">respected</span> and <span class="txtred">loved</span>.
+      </h1>
+    </div>
+  </div>
+</div><!------------------- end container | WHO WE ARE ------------------->
+
+<!------------------- STORY ------------------->
+<div class="container" id="bg_story">
+  <div class="row">
+    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
+      <div class="img_story">
+        <img src="img/Story.jpg" alt="Story">
+      </div>
+    </div>
+    <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-center">
+      <div>
+        <h4 class="txtred">OUR STORY</h4>
+        <h1>Overview of <span class="txtred">littlepaws</span></h1>
+        <h6>Tragically, thousands of homeless dogs and cats are needlessly euthanized in Vietnam each year simply
+          because of pet overpopulation. littlepaws Pet Foundation is an organization that provides a second chance for
+          thousands of homeless dogs and cat through rescue programs, rehabilitation and transport to forever homes in
+          communities throughout Vietnam that have a demand for adoptable pets.</h6>
+        <p class="text-left margin_top">Since starting operations in late 2010, littlepaws PF. has saved the lives of
+          nearly 90,000
+          homeless
+          companion animals by rescuing them from area shelters and transporting them to their new forever homes via our
+          reputable rescue partners across Vietnam.</p>
+        <p class="text-left">
+          After working with various traditional rescue groups for many years, the founders of littlepaws PF. realized
+          that the best way to save these dogs and cats is to get them to where there was actually a demand for homeless
+          animals. By partnering with other reputable rescue groups, we knew we could save thousands of more pets than
+          by adopting them out locally. In September 2013, littlepaws PF. began operations by transporting at-risk pets
+          from everywhere to carefully vetted rescue partners in Ho Chi Minh City, our first destination City.</p>
+        <p class="text-left">
+          One thing that is unique about littlepaws PF.'s efforts is our “temporary” foster program. After we rescue
+          pets from area shelters, the dogs and cats need short-term foster homes (a matter of days or up to a few weeks
+          in some cases) until their transport date. We are constantly in need of fosters and donations to cover their
+          extraordinary medical costs to make sure every pet transported is healthy.</p>
+      </div>
+    </div>
+  </div>
+</div><!------------------- end container | STORY ------------------->
+
+<!------------------- MISSION ------------------->
+<!------------------- end container | MISSION ------------------->
+
+<body>
+  <!-- JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Partners -->
+  <script>
+    $(document).ready(function () {
+      $(".owl_partners").owlCarousel({
+        items: 6,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        dot: true,
+        navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>',
+        ],
+        autoplaySpeed: 400,
+        responsive: {
+          0: {
+            nav: false,
+            items: 2,
+          },
+
+          576: {
+            nav: false,
+            items: 3,
+          },
+
+          768: {
+            items: 4,
+          },
+
+          992: {
+            items: 5,
+          },
+
+          1200: {
+            items: 6,
+          },
+        },
+      });
+    });
+  </script>
+
+  <!-- Dogs -->
+  <script>
+    $(document).ready(function () {
+      $(".owl_dogs").owlCarousel({
+        items: 4,
+        margin: 30,
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        nav: true,
+        dot: true,
+        navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>',
+        ],
+        autoplaySpeed: 400,
+        responsive: {
+          0: {
+            nav: false,
+            items: 1,
+          },
+
+          576: {
+            nav: false,
+            items: 2,
+          },
+
+          768: {
+            items: 3,
+          },
+
+          992: {
+            items: 4,
+          },
+
+          1200: {
+            items: 4,
+          },
+        },
+      });
+    });
+  </script>
+
+  <!-- fa-heart filled -->
+  <script>
+    $(".title_featured").click(function () {
+      $(this).find("i").toggleClass("fa-regular fa-heart fa-solid fa-heart");
+    });
+  </script>
+
+  <!-- Slide menu mobile-->
+  <script>
+    $(document).ready(function () {
+      $("#bg_menu_mobile").hide();
+      $("#bg_overlay").hide();
+      $("#bg_overlay2").hide();
+      $("#bg_search").hide();
+
+      // Icon NAVI
+      $("#icon_menu2").click(function () {
+        $(this).toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#icon_menu_scroll").toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#bg_menu_mobile").slideToggle(200);
+        $("#bg_overlay").fadeToggle(200);
+
+        $("#bg_search").slideUp(200);
+        $("#bg_overlay2").fadeOut(0);
+      });
+
+      $("#bg_overlay").click(function () {
+        $("#icon_menu2").toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#icon_menu_scroll").toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#bg_menu_mobile").slideToggle(200);
+        $("#bg_overlay").fadeToggle(200);
+      });
+
+      // Icon NAVI SCROLL
+      $("#icon_menu_scroll").click(function () {
+        $(this).toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#icon_menu2").toggleClass('fa-solid fa-bars fa-solid fa-xmark');
+        $("#bg_menu_mobile").slideToggle(200);
+        $("#bg_overlay").fadeToggle(200);
+
+        $("#bg_search").slideUp(200);
+        $("#bg_overlay2").fadeOut(0);
+      });
+
+      // SEARCH BOX
+      $(".search_icon").click(function () {
+        $("#bg_search").slideToggle(200);
+        $("#bg_overlay2").fadeToggle(0);
+
+        $("#icon_menu2").removeClass('fa-solid fa-xmark');
+        $("#icon_menu2").addClass('fa-solid fa-bars');
+
+        $("#icon_menu_scroll").removeClass('fa-solid fa-xmark');
+        $("#icon_menu_scroll").addClass('fa-solid fa-bars');
+
+        $("#bg_overlay").fadeOut(0);
+        $("#bg_menu_mobile").slideUp(200);
+      });
+
+
+      $("#bg_overlay2").click(function () {
+        $("#bg_search").slideToggle(200);
+        $("#bg_overlay2").fadeToggle(0);
+
+      });
+    });
+  </script>
+
+  <!-- Change menu scroll -->
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () { scrollFunction() };
+    $('a[href="#"]').click(function (e) { e.preventDefault(); });
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("bg_navi2").style.display = "none";
+        document.getElementById("bg_navi_scroll").style.display = "block";
+        document.getElementById("bg_navi_scroll").style.position = "fixed";
+        document.getElementById("bg_navi_scroll").style.top = "0";
+        document.getElementById("bg_navi_scroll").style.left = "0";
+        document.getElementById("bg_navi_scroll").style.right = "0";
+        document.getElementById("bg_navi_scroll").style.zIndex = "1090";
+        document.getElementById("bg_navi_scroll").style.boxShadow = "0 0 10px 0 rgba(32,32,32,1.00)";
+        document.getElementById("bg_menu_mobile").style.top = "70px";
+        document.getElementById("bg_search").style.top = "70px";
+        document.getElementById("bg_search").style.paddingTop = "30px";
+      } else {
+        document.getElementById("bg_navi2").style.display = "block";
+        document.getElementById("bg_navi2").style.position = "sticky";
+        document.getElementById("bg_navi2").style.zIndex = "1111";
+        document.getElementById("bg_navi_scroll").style.display = "none";
+        document.getElementById("bg_menu_mobile").style.top = "235px";
+        document.getElementById("bg_search").style.top = "235px";
+        document.getElementById("bg_search").style.paddingTop = "0";
+      }
+    }
+  </script>
+</body>
+
 </html>
